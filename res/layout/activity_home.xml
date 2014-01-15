@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="3"
+        android:padding="@dimen/page_padding_standard" >
+
+        <ImageView
+            android:id="@id/activity_home_grid"
+            style="@style/ImageTile.Home.Tall"
+            android:layout_columnSpan="3"
+            android:onClick="navigateToAbout"
+            android:src="@drawable/home_tile_artisan" />
+
+        <Space
+            android:layout_height="@dimen/page_padding_standard"
+            android:layout_columnSpan="3" />
+
+        <ImageView
+            style="@style/ImageTile.Home"
+            android:layout_columnSpan="3"
+            android:onClick="navigateToStore"
+            android:src="@drawable/home_tile_store" />
+
+        <Space
+            android:layout_height="@dimen/page_padding_standard"
+            android:layout_columnSpan="3" />
+
+        <ImageView
+            style="@style/ImageTile.Home.Square"
+            android:src="@drawable/home_tile_news"
+            android:onClick="navigateToNews"/>
+
+        <Space android:layout_width="@dimen/page_padding_standard" />
+
+        <ImageView
+            style="@style/ImageTile.Home.Square"
+            android:src="@drawable/home_tile_demo"
+            android:onClick="navigateToRequestDemo"/>
+    </GridLayout>
+
+</ScrollView>

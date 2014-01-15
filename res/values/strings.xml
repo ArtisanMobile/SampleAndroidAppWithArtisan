@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Artisan Mobile</string>
+    <string name="activity_title_store">Artisan Store</string>
+    <string name="activity_about_title">About Us</string>
+    <string name="activity_news_title">News</string>
+    <string name="activity_news_detail_title">News Detail</string>
+    <string name="activity_request_demo_title">Request a Demo</string>
+    <string name="action_bar_search">Search</string>
+    <string name="action_bar_checkout">Checkout</string>
+    <string name="store_detail_add_to_cart">Add to Cart</string>
+    <string name="store_detail_checkout">Buy Now</string>
+    <string name="shirt_name_1">T-Shirt (Black)</string>
+    <string name="shirt_name_1_long">Artisan \"Paint it Black\" Graphic Tee</string>
+    <string name="shirt_name_2">T-Shirt (Black)</string>
+    <string name="shirt_name_2_long">Artisan \"Knights in White Satin\" Graphic Tee</string>
+    <string name="shirt_name_3">T-Shirt (Grey)</string>
+    <string name="shirt_name_3_long">Artisan \"Shades of Grey\" Graphic Tee</string>
+    <string name="shirt_name_4">T-Shirt (Red)</string>
+    <string name="shirt_name_4_long">Artisan \"99 Red Balloons\" Graphic Tee</string>
+    <string name="mug_name_1">Mug (White)</string>
+    <string name="mug_name_1_long">Artisan \"Just A Mug\" Coffee Mug</string>
+    <string name="mug_name_2">Mug (Black)</string>
+    <string name="mug_name_2_long">Artisan \"More Than Just A Mug\" Coffee Mug</string>
+    <string name="ipsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</string>
+    <string name="about_artisan">At Artisan, we\'ve built a lot of mobile apps in our respective careers and now we\'re obsessed with building better mobile experiences for our clients and some of the world\'s best-known brands. We were born mobile so it\'s only natural for us to see where mobile is going. We want to help as many people as possible realize the full potential of what mobile can deliver. Artisan\'s patent-pending Mobile Experience Management platform brings all the power of customer experience management, website optimization and analytics to the world of mobile apps. We turn static native apps into powerful and dynamic marketing channels that allow you to unlock the revenue that mobile can provide, and unleash the full potential of your company\'s marketing campaigns. Artisan is founded by seasoned mobile practitioners and software innovators, and is proudly located in Old City, Philadelphia – a city known for its inventive thinking. Artisan is venture-backed by FirstMark Capital.</string>
+    <string name="cart_item_remove">Remove</string>
+    <string name="cart_empty">Your shopping cart is empty.</string>
+    <string name="cart_loading">Loading your shopping cart&#8230;</string>
+    <string name="cart_total">Cart Total:</string>
+    <string name="checkout_submit">Checkout</string>
+    <string name="visit_website">Visit Our Website</string>
+    <string name="website_url">http://www.useartisan.com</string>
+    <string name="list_item_link_text_default">show link</string>
+    <string name="request_demo_heading">See what\’s possible with Artisan and get ready to start A/B testing and tracking your native mobile application.</string>
+    <string name="request_demo_subheading">Send us an email and an Artisan representative will be in touch soon. Thank you for your interest in Artisan!</string>
+    <string name="request_demo_first_name">NAME</string>
+    <string name="request_demo_company_name">COMPANY NAME</string>
+    <string name="news_empty">No News Right Now</string>
+    <string name="contact_artisan">Contact Artisan</string>
+
+</resources>

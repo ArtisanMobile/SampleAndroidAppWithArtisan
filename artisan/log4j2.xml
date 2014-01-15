@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="warn">
+    <appenders>
+        <Console name="ERROR_WARN" target="SYSTEM_OUT">
+            <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%-5level] %msg%n"/>
+        </Console>
+        <Console name="INFO" target="SYSTEM_OUT">
+            <filters>
+	            <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="ACCEPT"/>
+	            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            </filters>
+            <PatternLayout pattern="%m%n"/>
+        </Console>
+        <Console name="DEFAULT" target="SYSTEM_OUT">
+            <ThresholdFilter level="INFO" onMatch="DENY" onMismatch="ACCEPT"/>
+            <PatternLayout pattern="[%-5level] %msg%n"/>
+        </Console>
+    </appenders>
+    <loggers>
+        <root level="info">
+            <appender-ref ref="ERROR_WARN"/>
+            <appender-ref ref="INFO"/>
+            <appender-ref ref="DEFAULT"/>
+        </root>
+    </loggers>
+</configuration>

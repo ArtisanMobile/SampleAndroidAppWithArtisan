@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/page_padding_narrow"
+    android:paddingLeft="@dimen/page_padding_standard"
+    android:paddingRight="@dimen/page_padding_standard"
+    android:paddingTop="@dimen/page_padding_standard" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_checkout_total_container" >
+    </ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_checkout_total_container"
+        android:gravity="center"
+        android:text="@string/cart_empty" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@id/activity_checkout_total_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_checkout_submit"
+        android:layout_marginTop="@dimen/page_padding_standard"
+        android:background="@color/mine_shaft_gray"
+        android:orientation="horizontal"
+        android:text="@string/visit_website"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/ArtisanTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:text="@string/cart_total"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@id/activity_checkout_total"
+            style="@style/ArtisanTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="$0.00"
+            android:textColor="@android:color/white">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/activity_checkout_submit"
+        style="@style/ArtisanTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/page_padding_standard"
+        android:background="@drawable/btn_long"
+        android:onClick="onCheckout"
+        android:text="@string/checkout_submit" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="artisan_view_id"/>
+    <!-- If you change the name of your ArtisanService subclass, be sure to specify the new classname here -->
+    <string name="artisan_service_name">.CustomArtisanService</string>
+</resources>
