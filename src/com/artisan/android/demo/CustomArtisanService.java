@@ -63,6 +63,9 @@ public class CustomArtisanService extends ArtisanService {
 		ArtisanExperimentManager.addVariantForExperiment(GREEN_VARIANT, BUY_NOW_EXPERIMENT);
 		ArtisanExperimentManager.addVariantForExperiment(ORANGE_VARIANT, BUY_NOW_EXPERIMENT);
 
+		// You can use this code to try out different variations without connecting to Artisan Tools
+		// ArtisanExperimentManager.startExperiment(BUY_NOW_EXPERIMENT, GREEN_VARIANT);
+
 		// Experiment on Store screen to test UX flow.
 		ArtisanExperimentManager.registerExperiment(SKIP_DETAIL_EXPERIMENT);
 		ArtisanExperimentManager.addVariantForExperiment(CONTROL_VARIANT, SKIP_DETAIL_EXPERIMENT);
