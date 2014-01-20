@@ -3,8 +3,10 @@ package com.artisan.android.demo.activity;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import org.apache.http.ParseException;
 
@@ -25,6 +27,7 @@ import com.artisan.android.demo.model.CartItem;
 import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
+import com.artisan.incodeapi.ArtisanTrackingManager;
 
 public class CheckoutActivity extends BaseActivity {
 
@@ -164,6 +167,12 @@ public class CheckoutActivity extends BaseActivity {
 			checkoutAdapter.remove(cartItem);
 			shoppingCart.removeItem(cartItem);
 		}
+		// Here is an example of using the Artisan Tracking Manager to track a custom analytics event with extra data
+		Map<String, String> cartInfo = new HashMap<String, String>();
+		cartInfo.put("cart total", checkoutTotal.getText().toString());
+		cartInfo.put("item count", "" + shoppingCart.getItems().size());
+		ArtisanTrackingManager.trackEvent("checked out", cartInfo);
+
 		Toast.makeText(this, "Thank you for your purchase! Your order is on its way.", Toast.LENGTH_LONG).show();
 		nextActivityIntent.setClass(this, StoreActivity.class);
 		startActivity(nextActivityIntent);
