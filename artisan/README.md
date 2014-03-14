@@ -4,6 +4,8 @@
 
 Thank you for using Artisan!  This installer will automatically integrate the Artisan SDK into your application, enabling you to connect to Artisan and begin testing and optimizing your native Android app!
 
+These instructions and more reference are available at http://docs.useartisan.com/dev/quickstart-for-android
+
 ## Table of Contents
 
 --------------------------------------------------
@@ -34,8 +36,6 @@ Thank you for using Artisan!  This installer will automatically integrate the Ar
   * Accept the licenses and click "Finish"
   * You may be prompted to restart Eclipse after this installation is complete.
 3. Download the installer from Artisan Tools. You should have a file like: YourProjectName-ArtisanInstaller.zip
-
-Please note: the Artisan Android SDK is not compatible with ProGuard. Unexpected behavior may occur if you install Artisan into an app built with ProGuard.
 
 Also note, the Artisan SDK uses the following jars, which will be copied in to your project:
   * android-support-v4.jar
@@ -74,6 +74,8 @@ Note: This process will automatically update the visibility of the onStart, onSt
 If there are any settings in your application's manifest that are not compatible with Artisan you will be notified and the installer will not complete. For example, you must specify a minimum Android SDK of 2.3.3 or higher. Change the specified settings and run the Artisan installer again.
 
 3. Installation is now complete. You'll need to refresh the project in Eclipse so that the newly added files are pulled into the project. Right click on your project and choose "Refresh".
+
+4. If you are using ProGuard you will need to follow additional configuration steps to get Artisan working for your release builds. See http://docs.useartisan.com/dev/proguard-for-android for more details
 
 **Congratulations! You are now ready to start using Artisan!**
 
@@ -153,6 +155,7 @@ In order to regenerate these files *automatically* after every build, Eclipse ne
 3. For the "working directory" field, click on "browse workspace" and select your `artisan` folder. Click OK.
 4. In the "arguments" text box, type `--aspectonly`. Click "OK" to save the builder configuration.
 5. Move the builder to the top of the list, above "Android Resource Manager".
+6. If you are using ProGuard you will need to follow additional configuration steps to get Artisan working for your release builds. See http://docs.useartisan.com/dev/proguard-for-android for more details
 
 **Congratulations! You are now ready to start using Artisan!**
 

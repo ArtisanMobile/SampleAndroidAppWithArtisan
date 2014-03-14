@@ -10,32 +10,33 @@ import com.artisan.android.demo.model.collection.ShoppingCart;
 
 public class LocalStorageService extends Service{
 
-    private ShoppingCart sharedCart;
-    private NewsFeed sharedNewsFeed;
-    
-    public class ServiceBinder extends Binder {
-        public LocalStorageService getService() {
-            return LocalStorageService.this;
-        }
-    };
-    
-    public void onCreate() {
-        sharedCart = new ShoppingCart(this);
-        sharedNewsFeed = new NewsFeed(this);
-    }
+	private ShoppingCart sharedCart;
+	private NewsFeed sharedNewsFeed;
 
-    @Override
-    public IBinder onBind(Intent intent) {
-        // TODO Auto-generated method stub
-        return new ServiceBinder();
-    }
-    
-    public ShoppingCart getShoppingCart() {
-        return sharedCart;
-    }
-    
-    public NewsFeed getNewsFeed() {
-        return sharedNewsFeed;
-    }
-    
+	public class ServiceBinder extends Binder {
+		public LocalStorageService getService() {
+			return LocalStorageService.this;
+		}
+	};
+
+	@Override
+	public void onCreate() {
+		sharedCart = new ShoppingCart(this);
+		sharedNewsFeed = new NewsFeed(this);
+	}
+
+	@Override
+	public IBinder onBind(Intent intent) {
+		// TODO Auto-generated method stub
+		return new ServiceBinder();
+	}
+
+	public ShoppingCart getShoppingCart() {
+		return sharedCart;
+	}
+
+	public NewsFeed getNewsFeed() {
+		return sharedNewsFeed;
+	}
+
 }

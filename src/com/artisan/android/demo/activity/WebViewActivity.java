@@ -20,6 +20,7 @@ public class WebViewActivity extends Activity {
 	private WebView webView;
 	private View progressBarContainter;
 
+	@Override
 	@SuppressLint("SetJavaScriptEnabled")
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,7 +31,7 @@ public class WebViewActivity extends Activity {
 		Intent intent = getIntent();
 		String url = intent.getStringExtra(WEB_VIEW_URL);
 
-		progressBarContainter = (View) findViewById(R.id.progress_container);
+		progressBarContainter = findViewById(R.id.progress_container);
 		progressBarContainter.setVisibility(View.VISIBLE);
 
 		webView = (WebView) findViewById(R.id.webview);
