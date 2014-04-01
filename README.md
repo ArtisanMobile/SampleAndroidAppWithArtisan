@@ -50,7 +50,7 @@ POWER HOOKS
 * There is also a simple example of a Power Hook Variable in use on the AboutActivity's onResume Method. This text is configurable from  Artisan Tools
 
 ANALYTICS
-* App analytics are automatically captured and sent to the Artisan service. That means every user, session, page view, navigation and click is automatically captured by Artisan. 
+* App analytics are automatically captured and sent to the Artisan service. That means every user, session, page view, navigation and click is automatically captured by Artisan.
 * Look for usages of the ArtisanTrackingManager for tracking custom analytics events.
 
 ARTISAN CANVAS EXPERIMENTS
