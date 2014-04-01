@@ -62,5 +62,4 @@ Connecting to Artisan Tools
 
 You'll need to connect to Artisan Tools to try out the Artisan Canvas experiments, make changes to power hook values, and view your application analytics.
 
-IMPORTANT: First you'll need to replace the AppID in CustomArtisanService with your AppID. You can find your AppID by looking at the URL when you click on your app from the landing page.
-For example, https://artisantools.com/apps/518bedaaa5eead368700000a <-- that last part is your AppID
+IMPORTANT: First you'll need to replace the AppID in CustomArtisanService with your AppID. You can find your App Id inth e getting started notification that you got when you first created your new app in Artisan Tools.
