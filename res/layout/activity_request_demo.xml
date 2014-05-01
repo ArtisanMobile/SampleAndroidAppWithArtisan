@@ -15,6 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/page_padding_standard"
             android:gravity="center"
+            android:id="@+id/request_demo_heading"
             android:text="@string/request_demo_heading" />
 
         <TextView

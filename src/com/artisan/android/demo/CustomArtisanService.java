@@ -60,6 +60,7 @@ public class CustomArtisanService extends ArtisanService {
 	public void registerPowerhooks() {
 		PowerHookManager.registerVariable("WelcomeText", "Welcome Text", "Welcome to Artisan!");
 		PowerHookManager.registerVariable("PurchaseThanks", "Thank you message after purchase", "Thank you for your purchase! Your order is on its way.");
+		PowerHookManager.registerVariable("requestDemoHeading", "Text at the top of the request demo screen", this.getString(R.string.request_demo_heading));
 
 		HashMap<String, String> defaultData = new HashMap<String, String>();
 		defaultData.put("discountCode", "012345ABC");

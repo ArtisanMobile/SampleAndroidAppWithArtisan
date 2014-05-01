@@ -10,10 +10,12 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.artisan.android.demo.R;
 import com.artisan.incodeapi.ArtisanProfileManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
+import com.artisan.powerhooks.PowerHookManager;
 
 public class RequestDemoActivity extends BaseActivity {
 
@@ -21,6 +23,13 @@ public class RequestDemoActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_request_demo);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		TextView requestDemoHeading = (TextView) this.findViewById(R.id.request_demo_heading);
+		requestDemoHeading.setText(PowerHookManager.getVariableValue("requestDemoHeading"));
 	}
 
 	public void contactArtisan(View view) {
