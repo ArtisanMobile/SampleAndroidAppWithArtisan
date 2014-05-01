@@ -1,16 +1,16 @@
 package com.artisan.android.demo.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.artisan.activity.ArtisanActivity;
 import com.artisan.android.demo.R;
 import com.artisan.android.demo.service.LocalStorageManager;
 
-public class BaseActivity extends Activity {
+public class BaseActivity extends ArtisanActivity {
 
 	protected final LocalStorageManager storageManager = new LocalStorageManager();
 	protected final Intent nextActivityIntent = new Intent();

@@ -1,7 +1,6 @@
 package com.artisan.android.demo.activity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,9 +9,10 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.artisan.activity.ArtisanActivity;
 import com.artisan.android.demo.R;
 
-public class WebViewActivity extends Activity {
+public class WebViewActivity extends ArtisanActivity {
 
 
 	public final static String WEB_VIEW_URL = "WEB_VIEW_URL";

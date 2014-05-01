@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.artisan.android.demo">
 
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
 
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:label="@string/activity_title_store" android:name="com.artisan.android.demo.activity.StoreActivity" android:parentActivityName=".activity.HomeActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.artisan.android.demo.activity.StoreDetailActivity" android:parentActivityName=".activity.StoreActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.artisan.android.demo.activity.CheckoutActivity" android:parentActivityName=".activity.StoreActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/activity_title_store" android:name="com.artisan.android.demo.activity.StoreDetailActivity" android:parentActivityName=".activity.StoreActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/activity_title_store" android:name="com.artisan.android.demo.activity.CheckoutActivity" android:parentActivityName=".activity.StoreActivity" android:screenOrientation="portrait"/>
         <activity android:label="@string/activity_about_title" android:name="com.artisan.android.demo.activity.AboutActivity" android:screenOrientation="portrait"/>
         <activity android:label="@string/activity_news_title" android:name="com.artisan.android.demo.activity.NewsActivity" android:screenOrientation="portrait"/>
         <activity android:label="@string/activity_news_detail_title" android:name="com.artisan.android.demo.activity.WebViewActivity" android:screenOrientation="portrait"/>

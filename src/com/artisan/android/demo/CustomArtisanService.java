@@ -1,5 +1,6 @@
 package com.artisan.android.demo;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,6 +8,9 @@ import android.content.Context;
 import android.widget.Toast;
 
 import com.artisan.incodeapi.ArtisanExperimentManager;
+import com.artisan.incodeapi.ArtisanLocationValue;
+import com.artisan.incodeapi.ArtisanProfileManager;
+import com.artisan.incodeapi.ArtisanProfileManager.Gender;
 import com.artisan.manager.ArtisanManager;
 import com.artisan.powerhooks.ArtisanBlock;
 import com.artisan.powerhooks.PowerHookManager;
@@ -29,6 +33,27 @@ public class CustomArtisanService extends ArtisanService {
 		// You can find your AppID by looking at the URL when you click on your app from the landing page.
 		// https://artisantools.com/apps/52a5d8482b222086ae00001f <-- that last part is your AppID
 		artisanManager.start("52a5d8482b222086ae00001f");
+	}
+
+	@Override
+	public void registerUserProfileVariables() {
+		ArtisanProfileManager.registerString("status", "active");
+		ArtisanProfileManager.registerNumber("avgTimesPerMonth", 10f);
+		ArtisanProfileManager.registerString("banner*ad", "stuff.png");
+		ArtisanProfileManager.registerDateTime("lastSeenAt", new Date());
+		ArtisanProfileManager.registerLocation("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
+		ArtisanProfileManager.registerNumber("totalOrderCount", 9);
+		ArtisanProfileManager.registerString("memberType", "gold");
+
+		ArtisanProfileManager.setStringValue("memberType", "platinum");
+		ArtisanProfileManager.setDateTimeValue("lastSeenAt", new Date());
+		ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
+		ArtisanProfileManager.setNumberValue("totalOrderCount", 10);
+
+		ArtisanProfileManager.setGender(Gender.Female);
+		ArtisanProfileManager.setUserAge(29);
+		ArtisanProfileManager.setSharedUserId("abcdef123456789");
+		ArtisanProfileManager.setUserAddress("234 Market Street, Philadelphia, PA 19106");
 	}
 
 	@Override

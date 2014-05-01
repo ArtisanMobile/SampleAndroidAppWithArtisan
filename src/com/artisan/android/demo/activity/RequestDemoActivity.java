@@ -43,7 +43,9 @@ public class RequestDemoActivity extends BaseActivity {
 		}
 		subject += "Interested in Artisan for Android";
 
+		// CUSTOM ANALYTICS EVENT
 		ArtisanTrackingManager.trackEvent("contactArtisan pressed", contactInfo);
+
 		Intent intent = new Intent(Intent.ACTION_SENDTO);
 		intent.setData(Uri.parse("mailto:")); // only email apps should handle this
 		intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "sales@useartisan.com" });

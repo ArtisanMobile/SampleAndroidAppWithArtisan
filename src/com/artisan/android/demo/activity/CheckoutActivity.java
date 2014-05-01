@@ -167,6 +167,8 @@ public class CheckoutActivity extends BaseActivity {
 			checkoutAdapter.remove(cartItem);
 			shoppingCart.removeItem(cartItem);
 		}
+
+		// CUSTOM ANALYTICS EVENT
 		// Here is an example of using the Artisan Tracking Manager to track a custom analytics event with extra data
 		Map<String, String> cartInfo = new HashMap<String, String>();
 		cartInfo.put("cart total", checkoutTotal.getText().toString());

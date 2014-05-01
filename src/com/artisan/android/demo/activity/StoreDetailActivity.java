@@ -22,6 +22,7 @@ import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
 import com.artisan.incodeapi.ArtisanExperimentManager;
+import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.powerhooks.PowerHookManager;
 
 public class StoreDetailActivity extends BaseActivity {
@@ -127,6 +128,13 @@ public class StoreDetailActivity extends BaseActivity {
 			Map<String, Object> extraData = new HashMap<String, Object>();
 			extraData.put("context", this);
 			PowerHookManager.executeBlock("showAlert", extraData);
+
+			// CUSTOM ANALYTICS EVENT
+			Map<String, String> itemDetails = new HashMap<String, String>();
+			itemDetails.put("selected item", "" + selectedItem.getTitleShort());
+			itemDetails.put("price", "" + selectedItem.getPrice());
+			ArtisanTrackingManager.trackEvent("Item added to cart", itemDetails);
+
 		} else {
 			Toast.makeText(this, "Could not add item to cart", Toast.LENGTH_SHORT).show();
 		}
@@ -137,6 +145,13 @@ public class StoreDetailActivity extends BaseActivity {
 		// This is the click handler for the buy now button.
 		// This is the goal of the Buy Now experiment--to get a click on the Buy Now button
 		ArtisanExperimentManager.setTargetReachedForExperiment(CustomArtisanService.BUY_NOW_EXPERIMENT);
+
+		// CUSTOM ANALYTICS EVENT
+		Map<String, String> itemDetails = new HashMap<String, String>();
+		itemDetails.put("selected item", "" + selectedItem.getTitleShort());
+		itemDetails.put("price", "" + selectedItem.getPrice());
+		ArtisanTrackingManager.trackEvent("Buy now button clicked", itemDetails);
+
 		boolean success = addSelectedItemToCart(v);
 		if (success) {
 			nextActivityIntent.setClass(this, CheckoutActivity.class);

@@ -5,20 +5,7 @@ It is intended to be used as a sandbox to see the Artisan SDK in action.
 Prerequisites
 ==============
 
-1. Eclipse with Android SDK (At a minimum ensure you have support for Android 2.3.3 and build against the latest Android SDK)
-2. Add the AspectJ eclipse plugin:
-  * In Eclipse click Help -> Install New Software
-  * Click "Add" on the right to add a new repository.
-    * For the name, you can name this AspectJ.
-    * For the location, you need the correct AJDT Update Site URL for your version of Eclipse:
-      * Eclipse 4.3 (Kepler) Update Site URL:  http://download.eclipse.org/tools/ajdt/43/update
-      * Eclipse 3.8 and 4.2 (Juno) Update Site URL:  http://download.eclipse.org/tools/ajdt/42/update
-      * Eclipse 3.7 (Indigo) Update Site URL:  http://download.eclipse.org/tools/ajdt/37/update
-      * For other versions of Eclipse find the correct Update Site URL on this page http://eclipse.org/ajdt/downloads/
-    * Click "OK"
-  * Select "AspectJ Developer Tools (Required)" and click "Next" and then "Next" again
-  * Accept the licenses and click "Finish"
-  * You may be prompted to restart Eclipse after this installation is complete.
+* IDE set up to build and run Android Apps. This app builds against API 19 so make sure you have that installed.
 
 
 Usage
@@ -26,12 +13,7 @@ Usage
 
 We have already run the Artisan Installer for you, so you can just look at the code and run the app.
 
-However to make sure that all of the project settings are updated for your local machine you will need to complete this step:
-* In a terminal, go to the artisan directory inside your project's root directory and run:
-    install.bat (on Windows)
-    sh install.sh (on Mac/OSX or linux)
-
-Then you should be ready to try out the Artisan Demo app! Don't forget to refresh when you come back to Eclipse.
+Open this project in your favorite Android IDE.
 
 In this app we have example usage of our in-code api and power hooks
 
@@ -62,4 +44,4 @@ Connecting to Artisan Tools
 
 You'll need to connect to Artisan Tools to try out the Artisan Canvas experiments, make changes to power hook values, and view your application analytics.
 
-IMPORTANT: First you'll need to replace the AppID in CustomArtisanService with your AppID. You can find your App Id inth e getting started notification that you got when you first created your new app in Artisan Tools.
+IMPORTANT: First you'll need to replace the AppID in CustomArtisanService with your AppID. You can find your App Id in the getting started notification that you got when you first created your new app in Artisan Tools.
