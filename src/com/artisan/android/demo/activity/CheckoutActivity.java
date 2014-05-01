@@ -30,6 +30,7 @@ import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
 import com.artisan.incodeapi.ArtisanProfileManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
+import com.artisan.powerhooks.PowerHookManager;
 
 public class CheckoutActivity extends BaseActivity {
 
@@ -180,7 +181,7 @@ public class CheckoutActivity extends BaseActivity {
 		// update a user profile variable -- this will get sent up to Artisan automatically
 		ArtisanProfileManager.setNumberValue("totalOrderCount", CustomArtisanService.totalOrderCount++);
 
-		Toast.makeText(this, "Thank you for your purchase! Your order is on its way.", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, PowerHookManager.getVariableValue("PurchaseThanks"), Toast.LENGTH_LONG).show();
 		nextActivityIntent.setClass(this, StoreActivity.class);
 		startActivity(nextActivityIntent);
 	}
