@@ -27,6 +27,8 @@ public class CustomArtisanService extends ArtisanService {
 	public static final String SKIP_DETAIL_EXPERIMENT = "Skip Detail";
 	public static final String SKIP_DETAIL_VARIANT = "Skip Detail Variant";
 
+	public static int totalOrderCount = 0;
+
 	@Override
 	public void startArtisanManager(ArtisanManager artisanManager) {
 		// Replace this with your AppID from artisan tools if you would like to try connecting and creating an in-code experiment
@@ -37,23 +39,21 @@ public class CustomArtisanService extends ArtisanService {
 
 	@Override
 	public void registerUserProfileVariables() {
-		ArtisanProfileManager.registerString("status", "active");
-		ArtisanProfileManager.registerNumber("avgTimesPerMonth", 10f);
-		ArtisanProfileManager.registerString("banner*ad", "stuff.png");
 		ArtisanProfileManager.registerDateTime("lastSeenAt", new Date());
 		ArtisanProfileManager.registerLocation("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
-		ArtisanProfileManager.registerNumber("totalOrderCount", 9);
-		ArtisanProfileManager.registerString("memberType", "gold");
+		ArtisanProfileManager.registerNumber("totalOrderCount", CustomArtisanService.totalOrderCount);
+		ArtisanProfileManager.registerString("visitorType", "anonymous");
 
-		ArtisanProfileManager.setStringValue("memberType", "platinum");
-		ArtisanProfileManager.setDateTimeValue("lastSeenAt", new Date());
-		ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
-		ArtisanProfileManager.setNumberValue("totalOrderCount", 10);
-
+		// These are just examples of using the . We don't have real profile information for this app
+		// but you might for yours if you have authenticated users
 		ArtisanProfileManager.setGender(Gender.Female);
 		ArtisanProfileManager.setUserAge(29);
 		ArtisanProfileManager.setSharedUserId("abcdef123456789");
 		ArtisanProfileManager.setUserAddress("234 Market Street, Philadelphia, PA 19106");
+
+		// You can also register and set separately using the set methods. These are just a few examples
+		ArtisanProfileManager.setDateTimeValue("lastSeenAt", new Date());
+		ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
 	}
 
 	@Override

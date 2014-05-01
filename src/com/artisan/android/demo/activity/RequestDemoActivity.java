@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.artisan.android.demo.R;
+import com.artisan.incodeapi.ArtisanProfileManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
 
 public class RequestDemoActivity extends BaseActivity {
@@ -45,6 +46,9 @@ public class RequestDemoActivity extends BaseActivity {
 
 		// CUSTOM ANALYTICS EVENT
 		ArtisanTrackingManager.trackEvent("contactArtisan pressed", contactInfo);
+
+		// Update user profile variable
+		ArtisanProfileManager.setStringValue("visitorType", "contacted");
 
 		Intent intent = new Intent(Intent.ACTION_SENDTO);
 		intent.setData(Uri.parse("mailto:")); // only email apps should handle this

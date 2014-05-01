@@ -22,11 +22,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.artisan.android.demo.CustomArtisanService;
 import com.artisan.android.demo.R;
 import com.artisan.android.demo.model.CartItem;
 import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
+import com.artisan.incodeapi.ArtisanProfileManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
 
 public class CheckoutActivity extends BaseActivity {
@@ -174,6 +176,9 @@ public class CheckoutActivity extends BaseActivity {
 		cartInfo.put("cart total", checkoutTotal.getText().toString());
 		cartInfo.put("item count", "" + shoppingCart.getItems().size());
 		ArtisanTrackingManager.trackEvent("checked out", cartInfo);
+
+		// update a user profile variable -- this will get sent up to Artisan automatically
+		ArtisanProfileManager.setNumberValue("totalOrderCount", CustomArtisanService.totalOrderCount++);
 
 		Toast.makeText(this, "Thank you for your purchase! Your order is on its way.", Toast.LENGTH_LONG).show();
 		nextActivityIntent.setClass(this, StoreActivity.class);
