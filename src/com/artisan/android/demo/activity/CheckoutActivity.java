@@ -22,7 +22,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.artisan.android.demo.CustomArtisanService;
+import com.artisan.android.demo.ArtisanDemoApplication;
 import com.artisan.android.demo.R;
 import com.artisan.android.demo.model.CartItem;
 import com.artisan.android.demo.model.collection.ShoppingCart;
@@ -179,7 +179,7 @@ public class CheckoutActivity extends BaseActivity {
 		ArtisanTrackingManager.trackEvent("checked out", cartInfo);
 
 		// update a user profile variable -- this will get sent up to Artisan automatically
-		ArtisanProfileManager.setNumberValue("totalOrderCount", CustomArtisanService.totalOrderCount++);
+		ArtisanProfileManager.setNumberValue("totalOrderCount", ArtisanDemoApplication.totalOrderCount++);
 
 		Toast.makeText(this, PowerHookManager.getVariableValue("PurchaseThanks"), Toast.LENGTH_LONG).show();
 		nextActivityIntent.setClass(this, StoreActivity.class);

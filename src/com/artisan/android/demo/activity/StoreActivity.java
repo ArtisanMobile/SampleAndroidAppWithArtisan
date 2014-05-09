@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.GridLayout;
 import android.widget.Toast;
 
-import com.artisan.android.demo.CustomArtisanService;
+import com.artisan.android.demo.ArtisanDemoApplication;
 import com.artisan.android.demo.R;
 import com.artisan.android.demo.model.CartItem;
 import com.artisan.android.demo.model.collection.ShoppingCart;
@@ -52,7 +52,7 @@ public class StoreActivity extends BaseActivity {
 	public void onResume() {
 		super.onResume();
 		// if you get to this activity then you have viewed the skip detail experiment
-		ArtisanExperimentManager.setExperimentViewedForExperiment(CustomArtisanService.SKIP_DETAIL_EXPERIMENT);
+		ArtisanExperimentManager.setExperimentViewedForExperiment(ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT);
 	}
 
 	private LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
@@ -90,8 +90,8 @@ public class StoreActivity extends BaseActivity {
 
 		itemDrawables.recycle();
 
-		if (ArtisanExperimentManager.isCurrentVariantForExperiment(CustomArtisanService.CONTROL_VARIANT, CustomArtisanService.SKIP_DETAIL_EXPERIMENT)) {
-			ArtisanExperimentManager.setTargetReachedForExperiment(CustomArtisanService.SKIP_DETAIL_EXPERIMENT);
+		if (ArtisanExperimentManager.isCurrentVariantForExperiment(ArtisanDemoApplication.CONTROL_VARIANT, ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT)) {
+			ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT);
 			nextActivityIntent.setClass(this, StoreDetailActivity.class);
 			ObjectMapper mapper = new ObjectMapper();
 			try {
@@ -100,8 +100,8 @@ public class StoreActivity extends BaseActivity {
 			} catch (IOException e) {
 				Log.e(TAG, "Error serializing store item data", e);
 			}
-		} else if (ArtisanExperimentManager.isCurrentVariantForExperiment(CustomArtisanService.SKIP_DETAIL_VARIANT, CustomArtisanService.SKIP_DETAIL_EXPERIMENT)) {
-			ArtisanExperimentManager.setTargetReachedForExperiment(CustomArtisanService.SKIP_DETAIL_EXPERIMENT);
+		} else if (ArtisanExperimentManager.isCurrentVariantForExperiment(ArtisanDemoApplication.SKIP_DETAIL_VARIANT, ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT)) {
+			ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT);
 			nextActivityIntent.setClass(this,  CheckoutActivity.class);
 			if (shoppingCart != null) {
 				shoppingCart.addItem(selectedItem);

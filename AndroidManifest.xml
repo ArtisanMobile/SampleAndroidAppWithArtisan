@@ -24,7 +24,7 @@
         <activity android:label="@string/activity_request_demo_title" android:name="com.artisan.android.demo.activity.RequestDemoActivity" android:screenOrientation="portrait"/>
 
         <service android:name=".service.LocalStorageService"/>
-        <service android:name=".CustomArtisanService"/>
-    </application>
+		<service android:name="com.artisan.services.ArtisanService"/>
+</application>
 
 </manifest>

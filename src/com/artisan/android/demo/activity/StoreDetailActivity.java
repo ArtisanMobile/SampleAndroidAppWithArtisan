@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.artisan.android.demo.CustomArtisanService;
+import com.artisan.android.demo.ArtisanDemoApplication;
 import com.artisan.android.demo.R;
 import com.artisan.android.demo.model.CartItem;
 import com.artisan.android.demo.model.collection.ShoppingCart;
@@ -86,16 +86,16 @@ public class StoreDetailActivity extends BaseActivity {
 		storageManager.loadShoppingCart(cartListener);
 
 		// If you get to this activity then you have seen the buy now experiment
-		ArtisanExperimentManager.setExperimentViewedForExperiment(CustomArtisanService.BUY_NOW_EXPERIMENT);
+		ArtisanExperimentManager.setExperimentViewedForExperiment(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
 
-		if (ArtisanExperimentManager.isCurrentVariantForExperiment(CustomArtisanService.CONTROL_VARIANT, CustomArtisanService.BUY_NOW_EXPERIMENT)) {
+		if (ArtisanExperimentManager.isCurrentVariantForExperiment(ArtisanDemoApplication.CONTROL_VARIANT, ArtisanDemoApplication.BUY_NOW_EXPERIMENT)) {
 			Log.d(TAG, "Current Variant for Buy Now Experiment: Control");
 			// Do nothing here as this is the control and users should experience this screen with no change
-		} else if (ArtisanExperimentManager.isCurrentVariantForExperiment(CustomArtisanService.GREEN_VARIANT, CustomArtisanService.BUY_NOW_EXPERIMENT)) {
+		} else if (ArtisanExperimentManager.isCurrentVariantForExperiment(ArtisanDemoApplication.GREEN_VARIANT, ArtisanDemoApplication.BUY_NOW_EXPERIMENT)) {
 			Log.d(TAG, "Current Variant for Buy Now Experiment: Green Button");
 			hideAddToCartButton();
 			setBuyButtonResource(R.drawable.btn_long_green);
-		} else if (ArtisanExperimentManager.isCurrentVariantForExperiment(CustomArtisanService.ORANGE_VARIANT, CustomArtisanService.BUY_NOW_EXPERIMENT)) {
+		} else if (ArtisanExperimentManager.isCurrentVariantForExperiment(ArtisanDemoApplication.ORANGE_VARIANT, ArtisanDemoApplication.BUY_NOW_EXPERIMENT)) {
 			Log.d(TAG, "Current Variant for Buy Now Experiment: Orange Button");
 			hideAddToCartButton();
 			setBuyButtonResource(R.drawable.btn_long_orange);
@@ -144,7 +144,7 @@ public class StoreDetailActivity extends BaseActivity {
 	public void addSelectedItemToCartAndCheckout(View v) {
 		// This is the click handler for the buy now button.
 		// This is the goal of the Buy Now experiment--to get a click on the Buy Now button
-		ArtisanExperimentManager.setTargetReachedForExperiment(CustomArtisanService.BUY_NOW_EXPERIMENT);
+		ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
 
 		// CUSTOM ANALYTICS EVENT
 		Map<String, String> itemDetails = new HashMap<String, String>();
