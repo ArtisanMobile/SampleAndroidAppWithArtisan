@@ -1,5 +1,6 @@
 package com.artisan.android.demo.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -60,19 +61,17 @@ public class ProfileActivity extends BaseActivity{
 			public void onClick(View v) {
 				updateProfile();
 				Toast.makeText(ProfileActivity.this, "Changes saved", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
+				startActivity(intent);
 			}
 			
 		});
 	}
 
 	private void updateProfile(){
-		RadioGroup locationsGroup = (RadioGroup)findViewById(R.id.locations_group);
 		RadioGroup genderGroup = (RadioGroup)findViewById(R.id.gender_group);
 		
-		//ugly way of setting radio button's value as simple/vague address
-		ArtisanProfileManager.setUserAddress(((RadioButton)findViewById(locationsGroup.getCheckedRadioButtonId())).getText().toString());
-		
-		//ugly way of getting textview's updated geocode value and setting it as last known location
+		// ugly way of getting textview's updated geocode value and setting it as last known location
 		String[] locs = ((TextView)findViewById(R.id.geocode_text)).getText().toString().split(",");
 		ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(Double.parseDouble(locs[0]), Double.parseDouble(locs[1])));
 		
@@ -122,8 +121,6 @@ public class ProfileActivity extends BaseActivity{
 		switch(view.getId()){
 		case R.id.newyork_button:
 			if(checked){
-				System.out.println("heyyyyyy");
-				//ArtisanProfileManager.setLocationValue("", getString(R.string.newyork));
 				geocodeView.setText(getString(R.string.newyork_geo));
 			}
 			break;

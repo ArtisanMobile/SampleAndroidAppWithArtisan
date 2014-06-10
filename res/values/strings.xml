@@ -39,7 +39,7 @@
     <string name="request_demo_company_name">COMPANY NAME</string>
     <string name="news_empty">No News Right Now</string>
     <string name="contact_artisan">Contact Artisan</string>
-    <string name="commit_profile_changes">Commit Profile Changes</string>
+    <string name="commit_profile_changes">Save Changes</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="unknown">Unknown</string>

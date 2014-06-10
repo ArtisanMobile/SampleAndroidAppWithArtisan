@@ -98,7 +98,6 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 		// ArtisanProfileManager.setGender(Gender.Female);
 		// ArtisanProfileManager.setUserAge(29);
 		ArtisanProfileManager.setSharedUserId("abcdef123456789");
-		ArtisanProfileManager.setUserAddress("234 Market Street, Philadelphia, PA 19106");
 
 		// You can also register and set separately using the set methods. These are just a few examples
 		ArtisanProfileManager.setDateTimeValue("lastSeenAt", new Date());
