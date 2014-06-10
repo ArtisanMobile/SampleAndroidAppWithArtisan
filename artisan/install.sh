@@ -17,4 +17,4 @@ cd build/jar
 
 ### The $@ option passes along all command line arguments to the ArtisanSupport.jar program
 
-java -Dlog4j.configurationFile="${loggerConfig}" -jar ArtisanSupport.jar $@
+java -Dlog4j.configurationFile="${loggerConfig}" -Djava.awt.headless=true -jar ArtisanSupport.jar $@

@@ -10,10 +10,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.artisan.android.demo.activity.CheckoutActivity;
 import com.artisan.application.ArtisanApplication;
 import com.artisan.incodeapi.ArtisanExperimentManager;
 import com.artisan.incodeapi.ArtisanLocationValue;
@@ -44,6 +46,13 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 		// You can find your AppID by looking at the URL when you click on your app from the landing page.
 		// https://artisantools.com/apps/52a5d8482b222086ae00001f <-- that last part is your AppID
 		ArtisanManager.startArtisan(this, "539757882b22206a9d00000e");
+
+		// Remove this to enable Artisan Push
+		ArtisanManager.disableArtisanPush();
+		// Uncomment this to enable Artisan Push
+		// ArtisanManager.setPushSenderId("PUT_YOUR_GOOGLE_PROJECT_NUMBER_HERE"); // Your sender ID is your Google Project Number. See http://developer.android.com/google/gcm/gs.html
+		// If you would like to use Artisan Push there are a few more permissions that need to be in your manifest and you need to add the google play support library to your app.
+		// See http://docs.useartisan.com/dev/android/push-notifications for details.
 
 		// pre-seeding the newsfeed from JSON data
 		copyAssetToInternalStorage("news_feed.json");
@@ -98,26 +107,55 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 
 	@Override
 	public void registerPowerhooks() {
-		PowerHookManager.registerVariable("WelcomeText", "Welcome Text", "Welcome to Artisan!");
-		PowerHookManager.registerVariable("PurchaseThanks", "Thank you message after purchase", "Thank you for your purchase! Your order is on its way.");
-		PowerHookManager.registerVariable("requestDemoHeading", "Text at the top of the request demo screen", this.getString(R.string.request_demo_heading));
+		PowerHookManager.registerVariable("welcome_text", "Welcome Text Sample PowerHook", "Welcome to Artisan!");
+		PowerHookManager.registerVariable("purchase_thanks", "Thank you message after purchase", "Thank you for your purchase! Your order is on its way.");
+
+		PowerHookManager.registerVariable("request_demo_heading", "Text at the top of the request demo screen", this.getString(R.string.request_demo_heading));
+
+		PowerHookManager.registerVariable("store_detail_checkout", "Buy now button text", this.getString(R.string.store_detail_checkout));
+		PowerHookManager.registerVariable("store_detail_add_to_cart", "Add to cart button text", this.getString(R.string.store_detail_add_to_cart));
+		PowerHookManager.registerVariable("checkout_submit", "Checkout button text", this.getString(R.string.checkout_submit));
+		PowerHookManager.registerVariable("cart_item_remove", "Remove cart item text", this.getString(R.string.cart_item_remove));
+		PowerHookManager.registerVariable("cart_empty", "Cart empty text", this.getString(R.string.cart_empty));
+		PowerHookManager.registerVariable("cart_total", "Cart total text", this.getString(R.string.cart_total));
+
+		PowerHookManager.registerVariable("visit_website", "Visit website button text", this.getString(R.string.visit_website));
+		PowerHookManager.registerVariable("website_url", "Website URL", this.getString(R.string.website_url));
 
 		HashMap<String, String> defaultData = new HashMap<String, String>();
+		defaultData.put("message", "Check out now and get ##discountAmount## off of your purchase. We've added discount code ##discountCode## to your cart.");
 		defaultData.put("discountCode", "012345ABC");
-		defaultData.put("discountAmount", "25%");
-		defaultData.put("shouldDisplay", "true");
-
-		PowerHookManager.registerBlock("showAlert", "Show Alert Block", defaultData, new ArtisanBlock() {
-			public void execute(Map<String, String> data, Map<String, Object> extraData) {
+		defaultData.put("discountAmount", "10%");
+		defaultData.put("shouldDisplay", "false");
+		PowerHookManager.registerBlock("showDiscountMessage", "Show discount message", defaultData, new ArtisanBlock() {
+			public void execute(Map<String, String> data, Map<String, Object> extraData, Context context) {
 				if ("true".equalsIgnoreCase(data.get("shouldDisplay"))) {
-					StringBuilder message = new StringBuilder();
-					message.append("Buy another for a friend! Use discount code ");
-					message.append(data.get("discountCode"));
-					message.append(" to get ");
-					message.append(data.get("discountAmount"));
-					message.append(" off your purchase of 2 or more!");
-					Toast.makeText((Context) extraData.get("context"), message, Toast.LENGTH_LONG).show();
+					String message = data.get("message");
+					message = message.replace("##discountCode##", data.get("discountCode"));
+					message = message.replace("##discountAmount##", data.get("discountAmount"));
+					Toast.makeText(context, message, Toast.LENGTH_LONG).show();
 				}
+			}
+		});
+
+		/*
+		 * Sample push payload for demo {"ANA":{"PH":"showCartWithMessage" : "PHP" : { "message" : "Check out now and get ##discountAmount## off your purchase. We've added discount code ##discountCode## to your cart.", "discountCode" : "0000123", "discountAmount" : "30%" }} }
+		 */
+		HashMap<String, String> defaultShowCartData = new HashMap<String, String>();
+		defaultShowCartData.put("message", "Check out now and get ##discountAmount## off of your purchse. We've added discount code ##discountCode## to your cart.");
+		defaultShowCartData.put("discountCode", "012345ABC");
+		defaultShowCartData.put("discountAmount", "25%");
+		PowerHookManager.registerBlock("showCartWithMessage", "Show cart and display message", defaultShowCartData, new ArtisanBlock() {
+			public void execute(Map<String, String> data, Map<String, Object> extraData, Context context) {
+				Intent startCartIntent = new Intent(context, CheckoutActivity.class);
+				startCartIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				startActivity(startCartIntent);
+
+				String message = data.get("message");
+				message = message.replace("##discountCode##", data.get("discountCode"));
+				message = message.replace("##discountAmount##", data.get("discountAmount"));
+				Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+
 			}
 		});
 	}

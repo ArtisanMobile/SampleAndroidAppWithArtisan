@@ -122,6 +122,7 @@ In addition, the Artisan SDK uses code from the following open source projects:
 * HttpClient http://hc.apache.org/httpclient-3.x/
 * Apache Commons http://commons.apache.org/
 * Jackson JSON Processor https://github.com/FasterXML/jackson
+* Otto https://github.com/square/otto
 
 These projects are licensed under the Apache License 2.0:
 
