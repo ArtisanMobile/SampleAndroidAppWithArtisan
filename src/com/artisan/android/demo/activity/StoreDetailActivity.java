@@ -42,6 +42,16 @@ public class StoreDetailActivity extends BaseActivity {
 	}
 
 	@Override
+	public void onStart() {
+		super.onStart();
+		Button addToCartButton = (Button) findViewById(R.id.activity_store_detail_add_to_cart);
+		if (addToCartButton != null) {
+			String addToCartButtonText = PowerHookManager.getVariableValue("store_detail_add_to_cart");
+			addToCartButton.setText(addToCartButtonText);
+		}
+	}
+
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_store_detail);
@@ -76,7 +86,7 @@ public class StoreDetailActivity extends BaseActivity {
 		View addToCartButton = findViewById(R.id.activity_store_detail_add_to_cart);
 		// Check to make sure that we haven't already removed the button from the view
 		if (addToCartButton != null) {
-			((ViewManager)addToCartButton.getParent()).removeView(addToCartButton);
+			((ViewManager) addToCartButton.getParent()).removeView(addToCartButton);
 		}
 	}
 
@@ -112,6 +122,7 @@ public class StoreDetailActivity extends BaseActivity {
 		public void onLoadComplete(ShoppingCart savedData) {
 			shoppingCart = savedData;
 		}
+
 		public void onError(LocalStorageException e) {
 			Log.e(TAG, e.getMessage(), e);
 		}

@@ -8,6 +8,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 import com.artisan.application.ArtisanApplication;
+import com.artisan.manager.ArtisanManager;
 import com.artisan.application.ArtisanRegisteredApplication;
 import com.artisan.incodeapi.ArtisanExperimentManager;
 import com.artisan.incodeapi.ArtisanLocationValue;
@@ -21,7 +22,8 @@ public class %generatedApplicationClassName% extends ArtisanApplication {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		ArtisanApplication.startArtisan(this, "%appId%");
+		%pushConfigCall%
+		ArtisanManager.startArtisan(this, "%appId%");
 	}
 	
 	/**
