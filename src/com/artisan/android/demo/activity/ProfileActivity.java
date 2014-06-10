@@ -16,28 +16,23 @@ import com.artisan.android.demo.R;
 import com.artisan.incodeapi.ArtisanLocationValue;
 import com.artisan.incodeapi.ArtisanProfileManager;
 
-public class ProfileActivity extends BaseActivity{
+public class ProfileActivity extends BaseActivity {
 
-	//TODO
-	//-update geo textview based on radiogroup
-	//-set values on button confirmation
-	//register all xml objects
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_profile);
-		
-		NumberPicker agePicker = (NumberPicker)findViewById(R.id.age_picker);
+
+		NumberPicker agePicker = (NumberPicker) findViewById(R.id.age_picker);
 		agePicker.setMaxValue(122);
 		agePicker.setMinValue(0);
-		
-		//setting a listener to update geocode text
-		RadioGroup locationsGroup = (RadioGroup)findViewById(R.id.locations_group);
-		locationsGroup.setOnCheckedChangeListener(new OnCheckedChangeListener(){
-			public void onCheckedChanged(RadioGroup group, int checkedId){
-				TextView geocodeView = (TextView)findViewById(R.id.geocode_text);
-				switch(checkedId){
+
+		// setting a listener to update geocode text
+		RadioGroup locationsGroup = (RadioGroup) findViewById(R.id.locations_group);
+		locationsGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+			public void onCheckedChanged(RadioGroup group, int checkedId) {
+				TextView geocodeView = (TextView) findViewById(R.id.geocode_text);
+				switch (checkedId) {
 				case R.id.newyork_button:
 					geocodeView.setText(getString(R.string.newyork_geo));
 					break;
@@ -53,9 +48,9 @@ public class ProfileActivity extends BaseActivity{
 				}
 			}
 		});
-		
-		Button confirmButton = (Button)findViewById(R.id.confirm_profile_button);
-		confirmButton.setOnClickListener(new OnClickListener(){
+
+		Button confirmButton = (Button) findViewById(R.id.confirm_profile_button);
+		confirmButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -64,18 +59,18 @@ public class ProfileActivity extends BaseActivity{
 				Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
 				startActivity(intent);
 			}
-			
+
 		});
 	}
 
-	private void updateProfile(){
-		RadioGroup genderGroup = (RadioGroup)findViewById(R.id.gender_group);
-		
+	private void updateProfile() {
 		// ugly way of getting textview's updated geocode value and setting it as last known location
-		String[] locs = ((TextView)findViewById(R.id.geocode_text)).getText().toString().split(",");
+		String[] locs = ((TextView) findViewById(R.id.geocode_text)).getText().toString().split(",");
 		ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(Double.parseDouble(locs[0]), Double.parseDouble(locs[1])));
-		
-		switch(genderGroup.getCheckedRadioButtonId()){
+
+		RadioGroup genderGroup = (RadioGroup) findViewById(R.id.gender_group);
+
+		switch (genderGroup.getCheckedRadioButtonId()) {
 		case R.id.male_button:
 			ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.Male);
 			break;
@@ -86,63 +81,14 @@ public class ProfileActivity extends BaseActivity{
 			ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.NA);
 			break;
 		}
-		
-		ArtisanProfileManager.setUserAge(((NumberPicker)findViewById(R.id.age_picker)).getValue());
-		
+
+		ArtisanProfileManager.setUserAge(((NumberPicker) findViewById(R.id.age_picker)).getValue());
+
 	}
-	
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
-	}
-	
-	public void onRadioButtonClicked(View view){
-		boolean checked = ((RadioButton) view).isChecked();
-		TextView geocodeView = (TextView) findViewById(R.id.geocode_text);
-		
-		//gender group
-		switch(view.getId()){
-		case R.id.male_button:
-			if(checked)
-				ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.Male);
-			break;
-		case R.id.female_button:
-			if(checked)
-				ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.Female);
-			break;
-		case R.id.unknown_button:
-			if(checked)
-				ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.NA);
-			break;
-		}
-		
-		//location group
-		switch(view.getId()){
-		case R.id.newyork_button:
-			if(checked){
-				geocodeView.setText(getString(R.string.newyork_geo));
-			}
-			break;
-		case R.id.philly_button:
-			if(checked){
-				ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.Female);
-				geocodeView.setText(getString(R.string.philly_geo));
-			}
-			break;
-		case R.id.la_button:
-			if(checked){
-				ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.Female);
-				geocodeView.setText(getString(R.string.la_geo));
-			}
-			break;
-		case R.id.paris_button:
-			if(checked){
-				ArtisanProfileManager.setGender(ArtisanProfileManager.Gender.Female);
-				geocodeView.setText(getString(R.string.paris_geo));
-			}
-			break;
-		}
 	}
 
 	@Override
