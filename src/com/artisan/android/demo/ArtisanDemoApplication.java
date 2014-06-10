@@ -95,14 +95,14 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 
 		// These are just examples of using the . We don't have real profile information for this app
 		// but you might for yours if you have authenticated users
-		//ArtisanProfileManager.setGender(Gender.Female);
-		//ArtisanProfileManager.setUserAge(29);
+		// ArtisanProfileManager.setGender(Gender.Female);
+		// ArtisanProfileManager.setUserAge(29);
 		ArtisanProfileManager.setSharedUserId("abcdef123456789");
-		//ArtisanProfileManager.setUserAddress("234 Market Street, Philadelphia, PA 19106");
+		ArtisanProfileManager.setUserAddress("234 Market Street, Philadelphia, PA 19106");
 
 		// You can also register and set separately using the set methods. These are just a few examples
 		ArtisanProfileManager.setDateTimeValue("lastSeenAt", new Date());
-		//ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
+		// ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
 	}
 
 	@Override
