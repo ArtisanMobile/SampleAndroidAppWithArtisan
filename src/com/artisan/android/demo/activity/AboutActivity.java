@@ -20,7 +20,7 @@ public class AboutActivity extends BaseActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		Toast.makeText(this, PowerHookManager.getVariableValue("WelcomeText"), Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, PowerHookManager.getVariableValue("welcome_text"), Toast.LENGTH_SHORT).show();
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class AboutActivity extends BaseActivity {
 	}
 
 	public void visitWebsite(View v) {
-		Intent urlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.website_url)));
+		Intent urlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(PowerHookManager.getVariableValue("website_url")));
 		startActivity(urlIntent);
 	}
 }

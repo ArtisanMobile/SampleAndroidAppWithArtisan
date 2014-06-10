@@ -50,25 +50,30 @@ public class CheckoutActivity extends BaseActivity {
 
 		setContentView(R.layout.activity_checkout);
 
-		checkoutList = (ListView)findViewById(android.R.id.list);
-		listPlaceholder = (TextView)findViewById(android.R.id.empty);
-		checkoutTotalContainer = (ViewGroup)findViewById(R.id.activity_checkout_total_container);
-		checkoutTotal = (TextView)findViewById(R.id.activity_checkout_total);
-		checkoutSubmit = (Button)findViewById(R.id.activity_checkout_submit);
+		checkoutList = (ListView) findViewById(android.R.id.list);
+		listPlaceholder = (TextView) findViewById(android.R.id.empty);
+		checkoutTotalContainer = (ViewGroup) findViewById(R.id.activity_checkout_total_container);
+		checkoutTotal = (TextView) findViewById(R.id.activity_checkout_total);
+		checkoutSubmit = (Button) findViewById(R.id.activity_checkout_submit);
 
 		listPlaceholder.setText(R.string.cart_loading);
 		checkoutList.setEmptyView(listPlaceholder);
 		checkoutAdapter = new CheckoutAdapter(new ArrayList<CartItem>());
 
 		refreshCheckoutDisplay();
-
 	}
 
 	@Override
 	public void onStart() {
 		super.onStart();
+
 		storageManager.loadShoppingCart(cartListener);
 
+		Button checkoutButton = (Button) findViewById(R.id.activity_checkout_submit);
+		checkoutButton.setText(PowerHookManager.getVariableValue("checkout_submit"));
+
+		TextView checkoutTotalView = (TextView) findViewById(R.id.activity_checkout_total_label);
+		checkoutTotalView.setText(PowerHookManager.getVariableValue("cart_total"));
 	}
 
 	@Override
@@ -86,6 +91,7 @@ public class CheckoutActivity extends BaseActivity {
 
 			refreshCheckoutDisplay();
 		}
+
 		public void onError(LocalStorageException e) {
 			Log.e(TAG, e.getMessage(), e);
 		}
@@ -117,7 +123,7 @@ public class CheckoutActivity extends BaseActivity {
 			subtitle.setText(cartItem.getPrice());
 			removeButton.setTag(R.id.tag_list_item_position, position);
 			removeButton.setOnClickListener(removeButtonListener);
-
+			removeButton.setText(PowerHookManager.getVariableValue("cart_item_remove"));
 			return convertView;
 		}
 
@@ -161,6 +167,7 @@ public class CheckoutActivity extends BaseActivity {
 			}
 			total = total.add(price);
 		}
+		ArtisanProfileManager.setNumberValue("orderTotal", total);
 		NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.US);
 		return currencyFormatter.format(total);
 	}
@@ -181,7 +188,7 @@ public class CheckoutActivity extends BaseActivity {
 		// update a user profile variable -- this will get sent up to Artisan automatically
 		ArtisanProfileManager.setNumberValue("totalOrderCount", ArtisanDemoApplication.totalOrderCount++);
 
-		Toast.makeText(this, PowerHookManager.getVariableValue("PurchaseThanks"), Toast.LENGTH_LONG).show();
+		Toast.makeText(this, PowerHookManager.getVariableValue("purchase_thanks"), Toast.LENGTH_LONG).show();
 		nextActivityIntent.setClass(this, StoreActivity.class);
 		startActivity(nextActivityIntent);
 	}
