@@ -45,7 +45,7 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 		// Replace this with your AppID from artisan tools if you would like to try connecting and creating an in-code experiment
 		// You can find your AppID by looking at the URL when you click on your app from the landing page.
 		// https://artisantools.com/apps/52a5d8482b222086ae00001f <-- that last part is your AppID
-		ArtisanManager.startArtisan(this, "539757882b22206a9d00000e");
+		ArtisanManager.startArtisan(this, "52a5d8482b222086ae00001f");
 
 		// Remove this to enable Artisan Push
 		ArtisanManager.disableArtisanPush();
