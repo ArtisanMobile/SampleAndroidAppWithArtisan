@@ -47,6 +47,13 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 		// https://artisantools.com/apps/52a5d8482b222086ae00001f <-- that last part is your AppID
 		ArtisanManager.startArtisan(this, "52a5d8482b222086ae00001f");
 
+		// Remove this to enable Artisan Push
+		ArtisanManager.disableArtisanPush();
+		// Uncomment this to enable Artisan Push
+		// ArtisanManager.setPushSenderId("PUT_YOUR_GOOGLE_PROJECT_NUMBER_HERE"); // Your sender ID is your Google Project Number. See http://developer.android.com/google/gcm/gs.html
+		// If you would like to use Artisan Push there are a few more permissions that need to be in your manifest and you need to add the google play support library to your app.
+		// See http://docs.useartisan.com/dev/android/push-notifications for details.
+
 		// pre-seeding the newsfeed from JSON data
 		copyAssetToInternalStorage("news_feed.json");
 	}
