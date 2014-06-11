@@ -39,5 +39,19 @@
     <string name="request_demo_company_name">COMPANY NAME</string>
     <string name="news_empty">No News Right Now</string>
     <string name="contact_artisan">Contact Artisan</string>
+    <string name="commit_profile_changes">Save Changes</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="unknown">Unknown</string>
+    <string name="newyork">New York City, NY</string>
+    <string name="philly">Philadelphia, PA</string>
+    <string name="la">Los Angeles, CA</string>
+    <string name="paris">Paris, FR</string>
+    <string name="newyork_geo">40.758224, -73.917404</string>
+    <string name="philly_geo">39.949958, -75.145553</string>
+    <string name="la_geo">34.052658, -118.245850</string>
+    <string name="paris_geo">48.857077, 2.350183</string>
+    <string name="action_bar_settings">Settings</string>
+    <string name="age_picker_label">Age</string>
 
 </resources>

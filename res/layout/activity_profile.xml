@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/confirm_profile_button"
+        android:padding="@dimen/page_padding_standard"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2" >
+
+            <NumberPicker
+                android:id="@+id/age_picker"
+                android:layout_column="1"
+                android:layout_gravity="center|bottom"
+                android:layout_row="1" />
+            
+            <TextView
+                android:id="@+id/age_picker_label"
+                android:layout_column="1"
+                android:layout_gravity="center|top"
+                android:layout_row="2"
+                android:text="@string/age_picker_label" />
+
+            <RadioGroup
+                android:id="@+id/gender_group"
+                android:layout_column="1"
+                android:layout_gravity="right|top"
+                android:layout_row="0" >
+
+                <RadioButton
+                    android:id="@+id/male_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/female_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+
+                <RadioButton
+                    android:id="@+id/unknown_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/locations_group"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:layout_row="0" >
+
+                <RadioButton
+                    android:id="@+id/newyork_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/newyork" />
+
+                <RadioButton
+                    android:id="@+id/philly_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/philly" />
+
+                <RadioButton
+                    android:id="@+id/la_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/la" />
+                
+                <RadioButton
+                    android:id="@+id/paris_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paris" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/geocode_text"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="1"
+                android:text="@string/newyork_geo" />
+
+            
+
+        </GridLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/confirm_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/commit_profile_changes" />
+
+</RelativeLayout>

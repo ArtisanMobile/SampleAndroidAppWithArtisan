@@ -41,6 +41,10 @@ public class BaseActivity extends ArtisanActivity {
 			Intent intent = new Intent(this, CheckoutActivity.class);
 			startActivity(intent);
 			return true;
+		case R.id.action_bar_settings:
+			intent = new Intent(this, ProfileActivity.class);
+			startActivity(intent);
+			return true;
 		default:
 			return false;
 		}
