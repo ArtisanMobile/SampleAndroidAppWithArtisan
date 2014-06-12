@@ -44,6 +44,7 @@ public class StoreDetailActivity extends BaseActivity {
 	@Override
 	public void onStart() {
 		super.onStart();
+
 		Button addToCartButton = (Button) findViewById(R.id.activity_store_detail_add_to_cart);
 		if (addToCartButton != null) {
 			String addToCartButtonText = PowerHookManager.getVariableValue("store_detail_add_to_cart");
@@ -81,7 +82,7 @@ public class StoreDetailActivity extends BaseActivity {
 		buyNowButton.setBackgroundResource(newResourceId);
 	}
 
-	// Hides the 'Add to Cart' button, which expands the 'Buy Now' button due to it's weight
+	// Hides the 'Add to Cart' button, which expands the 'Buy Now' button due to its weight
 	private void hideAddToCartButton() {
 		View addToCartButton = findViewById(R.id.activity_store_detail_add_to_cart);
 		// Check to make sure that we haven't already removed the button from the view
@@ -146,6 +147,9 @@ public class StoreDetailActivity extends BaseActivity {
 			itemDetails.put("price", "" + selectedItem.getPrice());
 			ArtisanTrackingManager.trackEvent("Item added to cart", itemDetails);
 
+			// update cart icon
+			updateOptionsMenu(shoppingCart.getItems().size());
+
 		} else {
 			Toast.makeText(this, "Could not add item to cart", Toast.LENGTH_SHORT).show();
 		}
@@ -153,8 +157,7 @@ public class StoreDetailActivity extends BaseActivity {
 	}
 
 	public void addSelectedItemToCartAndCheckout(View v) {
-		// This is the click handler for the buy now button.
-		// This is the goal of the Buy Now experiment--to get a click on the Buy Now button
+		// This is the click handler for the buy now button. This is the goal of the Buy Now experiment--to get a click on the Buy Now button
 		ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
 
 		// CUSTOM ANALYTICS EVENT

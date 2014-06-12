@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    style="@android:style/Widget.ActionButton" >
+
+    <ImageView
+        android:id="@+id/cart_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_icon" />
+
+    <TextView
+        android:id="@+id/actionbar_notifcation_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#9F2828"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/cart_image"
+        />
+
+</RelativeLayout>

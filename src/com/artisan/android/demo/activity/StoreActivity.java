@@ -51,6 +51,8 @@ public class StoreActivity extends BaseActivity {
 	@Override
 	public void onResume() {
 		super.onResume();
+		// load shopping cart on resume to reflect changes after backpress from detail page, or hitting the checkout button
+		storageManager.loadShoppingCart(cartListener);
 		// if you get to this activity then you have viewed the skip detail experiment
 		ArtisanExperimentManager.setExperimentViewedForExperiment(ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT);
 	}
@@ -58,7 +60,9 @@ public class StoreActivity extends BaseActivity {
 	private LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
 		public void onLoadComplete(ShoppingCart savedData) {
 			shoppingCart = savedData;
+			updateOptionsMenu(shoppingCart.getItems().size());
 		}
+
 		public void onError(LocalStorageException e) {
 			Log.e(TAG, e.getMessage(), e);
 		}
@@ -67,15 +71,11 @@ public class StoreActivity extends BaseActivity {
 	private void navigateToDetail(View clickedView) {
 		int clickedIndex = imageGrid.indexOfChild(clickedView);
 
-		String[] itemTitles = getResources().getStringArray(
-				R.array.store_item_titles);
-		String[] itemLongTitles = getResources().getStringArray(
-				R.array.store_item_titles_long);
-		TypedArray itemDrawables = getResources().obtainTypedArray(
-				R.array.store_detail_drawables);
+		String[] itemTitles = getResources().getStringArray(R.array.store_item_titles);
+		String[] itemLongTitles = getResources().getStringArray(R.array.store_item_titles_long);
+		TypedArray itemDrawables = getResources().obtainTypedArray(R.array.store_detail_drawables);
 
-		int detailDrawable = itemDrawables.getResourceId(clickedIndex,
-				R.drawable.shirt1);
+		int detailDrawable = itemDrawables.getResourceId(clickedIndex, R.drawable.shirt1);
 		String detailTitle = itemTitles[clickedIndex];
 		String detailTitleLong = itemLongTitles[clickedIndex];
 		String detailDescription = getString(R.string.ipsum);
@@ -96,13 +96,14 @@ public class StoreActivity extends BaseActivity {
 			ObjectMapper mapper = new ObjectMapper();
 			try {
 				byte[] serializedItem = mapper.writeValueAsBytes(selectedItem);
+
 				nextActivityIntent.putExtra(StoreDetailActivity.EXTRA_STORE_ITEM, serializedItem);
 			} catch (IOException e) {
 				Log.e(TAG, "Error serializing store item data", e);
 			}
 		} else if (ArtisanExperimentManager.isCurrentVariantForExperiment(ArtisanDemoApplication.SKIP_DETAIL_VARIANT, ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT)) {
 			ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.SKIP_DETAIL_EXPERIMENT);
-			nextActivityIntent.setClass(this,  CheckoutActivity.class);
+			nextActivityIntent.setClass(this, CheckoutActivity.class);
 			if (shoppingCart != null) {
 				shoppingCart.addItem(selectedItem);
 			} else {
