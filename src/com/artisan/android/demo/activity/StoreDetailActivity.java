@@ -167,6 +167,7 @@ public class StoreDetailActivity extends BaseActivity {
 		if (success) {
 			nextActivityIntent.setClass(this, CheckoutActivity.class);
 			startActivity(nextActivityIntent);
+			finish(); // destroys the activity thus allowing the details to refresh in the next onCreate()
 		}
 	}
 }
