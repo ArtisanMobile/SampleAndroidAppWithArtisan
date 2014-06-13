@@ -58,6 +58,7 @@ public class CheckoutActivity extends BaseActivity {
 
 		listPlaceholder.setText(R.string.cart_loading);
 		checkoutList.setEmptyView(listPlaceholder);
+
 		checkoutAdapter = new CheckoutAdapter(new ArrayList<CartItem>());
 
 		refreshCheckoutDisplay();
@@ -177,6 +178,9 @@ public class CheckoutActivity extends BaseActivity {
 			checkoutAdapter.remove(cartItem);
 			shoppingCart.removeItem(cartItem);
 		}
+
+		// refresh detail screens
+		StoreDetailActivity.finishAll();
 
 		// CUSTOM ANALYTICS EVENT
 		// Here is an example of using the Artisan Tracking Manager to track a custom analytics event with extra data

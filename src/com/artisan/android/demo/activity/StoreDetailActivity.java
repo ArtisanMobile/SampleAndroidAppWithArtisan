@@ -1,11 +1,13 @@
 package com.artisan.android.demo.activity;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,6 +35,7 @@ public class StoreDetailActivity extends BaseActivity {
 
 	private CartItem selectedItem;
 	private ShoppingCart shoppingCart;
+	private static ArrayList<Activity> activities = new ArrayList<Activity>();
 
 	private Bundle extras;
 
@@ -57,6 +60,9 @@ public class StoreDetailActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_store_detail);
 
+		// compile a list of all active instances of this activity so that we can kill them all in order to force onCreate() getting called
+		activities.add(this);
+
 		ObjectMapper mapper = new ObjectMapper();
 
 		extras = savedInstanceState != null ? savedInstanceState : getIntent().getExtras();
@@ -74,6 +80,18 @@ public class StoreDetailActivity extends BaseActivity {
 			itemPrice.setText(selectedItem.getPrice());
 		} catch (IOException e) {
 			Log.e(TAG, "Error deserializing store item data", e);
+		}
+	}
+
+	protected void onDestroy() {
+		super.onDestroy();
+		activities.remove(this);
+	}
+
+	// kills all instances of this activity to ensure that the next time it is viewed, all the data has been refreshed
+	public static void finishAll() {
+		for (Activity activity : activities) {
+			activity.finish();
 		}
 	}
 
@@ -170,7 +188,7 @@ public class StoreDetailActivity extends BaseActivity {
 		if (success) {
 			nextActivityIntent.setClass(this, CheckoutActivity.class);
 			startActivity(nextActivityIntent);
-			finish(); // destroys the activity thus allowing the details to refresh in the next onCreate()
+			finishAll();
 		}
 	}
 }
