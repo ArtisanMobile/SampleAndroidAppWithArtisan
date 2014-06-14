@@ -34,7 +34,6 @@ public class StoreDetailActivity extends BaseActivity {
 	private static final String TAG = StoreDetailActivity.class.getSimpleName();
 
 	private CartItem selectedItem;
-	private ShoppingCart shoppingCart;
 	private static ArrayList<Activity> activities = new ArrayList<Activity>();
 
 	private Bundle extras;
@@ -139,7 +138,7 @@ public class StoreDetailActivity extends BaseActivity {
 
 	private LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
 		public void onLoadComplete(ShoppingCart savedData) {
-			shoppingCart = savedData;
+			shoppingCart = new ShoppingCart(StoreDetailActivity.this);// savedData;
 		}
 
 		public void onError(LocalStorageException e) {

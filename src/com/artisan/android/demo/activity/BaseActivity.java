@@ -1,6 +1,5 @@
 package com.artisan.android.demo.activity;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,7 +25,7 @@ public class BaseActivity extends ArtisanActivity {
 	protected final LocalStorageManager storageManager = new LocalStorageManager();
 	protected final Intent nextActivityIntent = new Intent();
 	protected Menu optionsMenu;
-	protected int cartItems = 0;
+	protected static ShoppingCart shoppingCart;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +37,7 @@ public class BaseActivity extends ArtisanActivity {
 	protected void onStart() {
 		super.onStart();
 		storageManager.start(this);
+		storageManager.loadShoppingCart(cartListener);
 	}
 
 	@Override
@@ -65,8 +65,8 @@ public class BaseActivity extends ArtisanActivity {
 
 	protected LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
 		public void onLoadComplete(ShoppingCart savedData) {
-			cartItems = savedData.getItems().size();
-			updateOptionsMenu(cartItems);
+			shoppingCart = new ShoppingCart(BaseActivity.this);
+			updateOptionsMenu(shoppingCart.getItems().size());
 		}
 
 		public void onError(LocalStorageException e) {
