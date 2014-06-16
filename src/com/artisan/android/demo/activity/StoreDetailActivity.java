@@ -138,7 +138,7 @@ public class StoreDetailActivity extends BaseActivity {
 			didAddToCart = true;
 			Map<String, Object> extraData = new HashMap<String, Object>();
 			extraData.put("context", this);
-			PowerHookManager.executeBlock("showAlert", extraData);
+			PowerHookManager.executeBlock("showDiscountMessage", extraData);
 
 			// CUSTOM ANALYTICS EVENT
 			Map<String, String> itemDetails = new HashMap<String, String>();
