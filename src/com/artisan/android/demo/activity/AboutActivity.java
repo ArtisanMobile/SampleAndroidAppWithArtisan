@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.artisan.android.demo.R;
@@ -21,6 +22,8 @@ public class AboutActivity extends BaseActivity {
 	protected void onResume() {
 		super.onResume();
 		Toast.makeText(this, PowerHookManager.getVariableValue("welcome_text"), Toast.LENGTH_SHORT).show();
+		Button visitWebsiteButton = (Button) this.findViewById(R.id.activity_about_visit_website);
+		visitWebsiteButton.setText(PowerHookManager.getVariableValue("visit_website"));
 	}
 
 	@Override
