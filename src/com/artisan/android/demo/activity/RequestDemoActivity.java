@@ -29,7 +29,7 @@ public class RequestDemoActivity extends BaseActivity {
 	protected void onResume() {
 		super.onResume();
 		TextView requestDemoHeading = (TextView) this.findViewById(R.id.request_demo_heading);
-		requestDemoHeading.setText(PowerHookManager.getVariableValue("requestDemoHeading"));
+		requestDemoHeading.setText(PowerHookManager.getVariableValue("request_demo_heading"));
 	}
 
 	public void contactArtisan(View view) {
