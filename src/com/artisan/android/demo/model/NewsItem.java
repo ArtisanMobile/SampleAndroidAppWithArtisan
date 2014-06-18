@@ -1,7 +1,5 @@
 package com.artisan.android.demo.model;
 
-import java.util.Date;
-
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
@@ -13,7 +11,7 @@ public class NewsItem {
 	private String id;
 
 	private static final String DEFAULT_ICON_RES_NAME = "collections_view_as_list";
-	private static final String DEFAULT_ICON_TEXT_RES_NAME= "list_item_link_text_default";
+	private static final String DEFAULT_ICON_TEXT_RES_NAME = "list_item_link_text_default";
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	private static class NewsItemValueContainer {
@@ -24,7 +22,7 @@ public class NewsItem {
 		private String contentText;
 
 		@JsonProperty("created_at")
-		private Date createdDate;
+		private long createdDate;
 
 		@JsonProperty("provider")
 		private String provider;
@@ -34,13 +32,15 @@ public class NewsItem {
 
 		@JsonProperty("url")
 		private String linkUrl;
+
+		@JsonProperty("tags")
+		private String tags;
 	}
 
 	@JsonCreator
 	public NewsItem(@JsonProperty("id") String id) {
 		this.id = id;
 	}
-
 
 	@JsonProperty("value")
 	private NewsItemValueContainer valueContainer;
@@ -62,7 +62,7 @@ public class NewsItem {
 		return DEFAULT_ICON_RES_NAME;
 	}
 
-	public Date getCreatedDate() {
+	public long getCreatedDate() {
 		return valueContainer.createdDate;
 	}
 

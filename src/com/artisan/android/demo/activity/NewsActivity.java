@@ -1,6 +1,7 @@
 package com.artisan.android.demo.activity;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -97,10 +98,13 @@ public class NewsActivity extends BaseActivity {
 			Resources r = getResources();
 			int iconRes = r.getIdentifier(newsItem.getIconResName(), "drawable", getContext().getPackageName());
 			int iconTextRes = r.getIdentifier(newsItem.getIconTextResName(), "string", getContext().getPackageName());
-			int imageRes = r.getIdentifier(newsItem.getProfilePicResName(), "drawable", getContext().getPackageName());
 
+			// hardcoded string because unifeed doesn't provide pic link
+			int imageRes = r.getIdentifier("artisan_profile_pic", "drawable", getContext().getPackageName());
+
+			Date date = new Date(newsItem.getCreatedDate() * 1000);
 			SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM", Locale.getDefault());
-			String dateString = dateFormat.format(newsItem.getCreatedDate());
+			String dateString = dateFormat.format(date);
 
 			contentText.setText(newsItem.getContentText());
 			dateText.setText(dateString);

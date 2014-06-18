@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.JavaType;
+import org.json.JSONObject;
 
 import android.content.Context;
 import android.util.Log;
@@ -17,9 +18,6 @@ public class JsonSerializer<JacksonAnnotatedType> {
 	private String filePath;
 	private Context appContext;
 	private Class<JacksonAnnotatedType> annotatedClass;
-
-	// TODO: we need to do saving / loading off the background thread. The JsonSerializer should accept an
-	// ExecutorService through its constructor and use the executor to schedule its threads.
 
 	public JsonSerializer(Context c, String filePath, Class<JacksonAnnotatedType> annotatedClass) {
 		this.filePath = filePath;
@@ -35,6 +33,7 @@ public class JsonSerializer<JacksonAnnotatedType> {
 			try {
 				JavaType containerType = mapper.getTypeFactory().constructCollectionType(LinkedHashSet.class, annotatedClass);
 				LinkedHashSet<JacksonAnnotatedType> deserializedObject = mapper.readValue(jsonFile, containerType);
+				System.out.println(deserializedObject.toString());
 				return deserializedObject;
 			} catch (IOException e) {
 				String message = String.format("Error loading JSON file '%s' from disk", filePath);
@@ -48,6 +47,20 @@ public class JsonSerializer<JacksonAnnotatedType> {
 	}
 
 	public boolean saveAsJson(LinkedHashSet<JacksonAnnotatedType> saveData) {
+		File jsonFile = new File(appContext.getFilesDir(), filePath);
+		ObjectMapper mapper = new ObjectMapper();
+
+		try {
+			mapper.writeValue(jsonFile, saveData);
+			return true;
+		} catch (IOException e) {
+			String message = String.format("Error writing JSON file '%s' to disk", filePath);
+			Log.e(TAG, message, e);
+		}
+		return false;
+	}
+
+	public boolean saveJson(JSONObject saveData) {
 		File jsonFile = new File(appContext.getFilesDir(), filePath);
 		ObjectMapper mapper = new ObjectMapper();
 
