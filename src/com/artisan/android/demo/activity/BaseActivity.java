@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -87,16 +88,22 @@ public class BaseActivity extends ArtisanActivity {
 				}
 
 			});
+			ImageView redCircleView = (ImageView) badgeLayout.findViewById(R.id.red_circle);
+			redCircleView.setVisibility(View.VISIBLE);
+
 			TextView itemView = (TextView) badgeLayout.findViewById(R.id.actionbar_notifcation_textview);
 			itemView.setText(String.valueOf(cartItems));
 			itemView.setVisibility(View.VISIBLE);
 
 			if (cartItems == 0) {
 				itemView.setVisibility(View.GONE);
+				redCircleView.setVisibility(View.GONE);
 			}
+
 		} catch (NullPointerException e) {
 			// optionsMenu is null because onCreateOptionsMenu doesn't get called
 		}
+
 	}
 
 	@Override

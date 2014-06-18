@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Widget.ActionButton"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
-    android:clickable="true"
-    style="@android:style/Widget.ActionButton" >
+    android:clickable="true" >
 
     <ImageView
         android:id="@+id/cart_image"
@@ -10,14 +10,25 @@
         android:layout_height="wrap_content"
         android:background="@drawable/cart_icon" />
 
+    <ImageView
+        android:id="@+id/red_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/cart_image"
+        android:layout_marginRight="4sp"
+        android:layout_marginTop="-5sp"
+        android:background="@drawable/red_circle" />
+
     <TextView
         android:id="@+id/actionbar_notifcation_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/red_circle"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="-5sp"
         android:text="0"
-        android:textColor="#9F2828"
+        android:textColor="#FFFFFF"
         android:textSize="14sp"
-        android:layout_toRightOf="@+id/cart_image"
-        />
+        android:textStyle="bold" />
 
 </RelativeLayout>
