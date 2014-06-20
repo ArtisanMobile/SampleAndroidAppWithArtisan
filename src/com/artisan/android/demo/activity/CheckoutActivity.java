@@ -37,7 +37,6 @@ public class CheckoutActivity extends BaseActivity {
 	private static final String TAG = CheckoutActivity.class.getSimpleName();
 
 	private ListView checkoutList;
-	private ShoppingCart shoppingCart;
 	private CheckoutAdapter checkoutAdapter;
 	private TextView listPlaceholder;
 	private ViewGroup checkoutTotalContainer;
@@ -58,6 +57,7 @@ public class CheckoutActivity extends BaseActivity {
 
 		listPlaceholder.setText(R.string.cart_loading);
 		checkoutList.setEmptyView(listPlaceholder);
+
 		checkoutAdapter = new CheckoutAdapter(new ArrayList<CartItem>());
 
 		refreshCheckoutDisplay();
@@ -74,6 +74,7 @@ public class CheckoutActivity extends BaseActivity {
 
 		TextView checkoutTotalView = (TextView) findViewById(R.id.activity_checkout_total_label);
 		checkoutTotalView.setText(PowerHookManager.getVariableValue("cart_total"));
+
 	}
 
 	@Override
@@ -83,13 +84,17 @@ public class CheckoutActivity extends BaseActivity {
 
 	private LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
 		public void onLoadComplete(ShoppingCart savedData) {
-			shoppingCart = savedData;
+			checkoutAdapter = new CheckoutAdapter(new ArrayList<CartItem>());
+
+			shoppingCart = new ShoppingCart(CheckoutActivity.this);
+
 			checkoutAdapter.addAll(shoppingCart.getItems());
 			checkoutList.setAdapter(checkoutAdapter);
 			listPlaceholder.setText(R.string.cart_empty);
 			checkoutList.setEmptyView(listPlaceholder);
 
 			refreshCheckoutDisplay();
+
 		}
 
 		public void onError(LocalStorageException e) {
@@ -177,6 +182,9 @@ public class CheckoutActivity extends BaseActivity {
 			checkoutAdapter.remove(cartItem);
 			shoppingCart.removeItem(cartItem);
 		}
+
+		// refresh detail screens
+		StoreDetailActivity.finishAll();
 
 		// CUSTOM ANALYTICS EVENT
 		// Here is an example of using the Artisan Tracking Manager to track a custom analytics event with extra data

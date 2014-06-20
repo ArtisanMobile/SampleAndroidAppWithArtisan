@@ -53,5 +53,8 @@
     <string name="paris_geo">48.857077, 2.350183</string>
     <string name="action_bar_settings">Settings</string>
     <string name="age_picker_label">Age</string>
+    <string name="age_and_gender_label">Age &amp; Gender</string>
+    <string name="location_label">Location</string>
+    <string name="profile_description">Change the user\'s settings here to see how personalization affects various demographics.</string>
 
 </resources>

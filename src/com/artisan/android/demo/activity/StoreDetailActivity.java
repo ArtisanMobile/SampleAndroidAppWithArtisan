@@ -1,11 +1,13 @@
 package com.artisan.android.demo.activity;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,7 +34,7 @@ public class StoreDetailActivity extends BaseActivity {
 	private static final String TAG = StoreDetailActivity.class.getSimpleName();
 
 	private CartItem selectedItem;
-	private ShoppingCart shoppingCart;
+	private static ArrayList<Activity> activities = new ArrayList<Activity>();
 
 	private Bundle extras;
 
@@ -44,6 +46,7 @@ public class StoreDetailActivity extends BaseActivity {
 	@Override
 	public void onStart() {
 		super.onStart();
+
 		Button addToCartButton = (Button) findViewById(R.id.activity_store_detail_add_to_cart);
 		if (addToCartButton != null) {
 			String addToCartButtonText = PowerHookManager.getVariableValue("store_detail_add_to_cart");
@@ -55,6 +58,9 @@ public class StoreDetailActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_store_detail);
+
+		// compile a list of all active instances of this activity so that we can kill them all in order to force onCreate() getting called
+		activities.add(this);
 
 		ObjectMapper mapper = new ObjectMapper();
 
@@ -76,12 +82,24 @@ public class StoreDetailActivity extends BaseActivity {
 		}
 	}
 
+	protected void onDestroy() {
+		super.onDestroy();
+		activities.remove(this);
+	}
+
+	// kills all instances of this activity to ensure that the next time it is viewed, all the data has been refreshed
+	public static void finishAll() {
+		for (Activity activity : activities) {
+			activity.finish();
+		}
+	}
+
 	private void setBuyButtonResource(int newResourceId) {
 		Button buyNowButton = (Button) findViewById(R.id.activity_store_detail_checkout);
 		buyNowButton.setBackgroundResource(newResourceId);
 	}
 
-	// Hides the 'Add to Cart' button, which expands the 'Buy Now' button due to it's weight
+	// Hides the 'Add to Cart' button, which expands the 'Buy Now' button due to its weight
 	private void hideAddToCartButton() {
 		View addToCartButton = findViewById(R.id.activity_store_detail_add_to_cart);
 		// Check to make sure that we haven't already removed the button from the view
@@ -120,7 +138,7 @@ public class StoreDetailActivity extends BaseActivity {
 
 	private LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
 		public void onLoadComplete(ShoppingCart savedData) {
-			shoppingCart = savedData;
+			shoppingCart = new ShoppingCart(StoreDetailActivity.this);// savedData;
 		}
 
 		public void onError(LocalStorageException e) {
@@ -146,6 +164,9 @@ public class StoreDetailActivity extends BaseActivity {
 			itemDetails.put("price", "" + selectedItem.getPrice());
 			ArtisanTrackingManager.trackEvent("Item added to cart", itemDetails);
 
+			// update cart icon
+			updateOptionsMenu(shoppingCart.getItems().size());
+
 		} else {
 			Toast.makeText(this, "Could not add item to cart", Toast.LENGTH_SHORT).show();
 		}
@@ -153,8 +174,7 @@ public class StoreDetailActivity extends BaseActivity {
 	}
 
 	public void addSelectedItemToCartAndCheckout(View v) {
-		// This is the click handler for the buy now button.
-		// This is the goal of the Buy Now experiment--to get a click on the Buy Now button
+		// This is the click handler for the buy now button. This is the goal of the Buy Now experiment--to get a click on the Buy Now button
 		ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
 
 		// CUSTOM ANALYTICS EVENT
@@ -167,6 +187,7 @@ public class StoreDetailActivity extends BaseActivity {
 		if (success) {
 			nextActivityIntent.setClass(this, CheckoutActivity.class);
 			startActivity(nextActivityIntent);
+			finishAll();
 		}
 	}
 }
