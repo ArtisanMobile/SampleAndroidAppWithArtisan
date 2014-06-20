@@ -122,7 +122,7 @@ public class LocalStorageManager {
 			this.exceptionCause = cause;
 		}
 
-		public CallbackRunnable (LocalStorageListener<ResultType> listener, ResultType result) {
+		public CallbackRunnable(LocalStorageListener<ResultType> listener, ResultType result) {
 			this.listener = listener;
 			this.result = result;
 		};
@@ -157,7 +157,7 @@ public class LocalStorageManager {
 		}
 	}
 
-	//TODO: this should throw an exception on timeout, possibly
+	// TODO: this should throw an exception on timeout, possibly
 	protected boolean waitForServiceToBeBound(long milliseconds) throws InterruptedException {
 
 		boolean serviceDidBind = true;

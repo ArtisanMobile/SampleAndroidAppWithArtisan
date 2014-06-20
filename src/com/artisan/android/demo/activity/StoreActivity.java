@@ -22,7 +22,6 @@ import com.artisan.incodeapi.ArtisanExperimentManager;
 public class StoreActivity extends BaseActivity {
 
 	GridLayout imageGrid;
-	private ShoppingCart shoppingCart;
 
 	private static final String TAG = StoreActivity.class.getSimpleName();
 
@@ -59,7 +58,7 @@ public class StoreActivity extends BaseActivity {
 
 	private LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
 		public void onLoadComplete(ShoppingCart savedData) {
-			shoppingCart = savedData;
+			shoppingCart = new ShoppingCart(StoreActivity.this);// savedData;
 			updateOptionsMenu(shoppingCart.getItems().size());
 		}
 

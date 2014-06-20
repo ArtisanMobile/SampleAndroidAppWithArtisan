@@ -1,12 +1,13 @@
 package com.artisan.android.demo.activity;
 
-import android.content.Intent;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.NumberPicker;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
@@ -23,9 +24,11 @@ public class ProfileActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_profile);
 
+		// setting values for number picker
 		NumberPicker agePicker = (NumberPicker) findViewById(R.id.age_picker);
 		agePicker.setMaxValue(122);
 		agePicker.setMinValue(0);
+		agePicker.setValue(30);
 
 		// setting a listener to update geocode text
 		RadioGroup locationsGroup = (RadioGroup) findViewById(R.id.locations_group);
@@ -49,18 +52,102 @@ public class ProfileActivity extends BaseActivity {
 			}
 		});
 
+		TextView ageAndGenderLabel = (TextView) findViewById(R.id.age_and_gender_label);
+
+		// setting age and gender to be selected by default
+		ageAndGenderLabel.setSelected(true);
+
+		ageAndGenderLabel.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// set other subviews invisible, and set age picker visible
+				LinearLayout ageAndGenderView = (LinearLayout) findViewById(R.id.age_and_gender_view);
+				ageAndGenderView.setVisibility(View.VISIBLE);
+
+				LinearLayout locationsView = (LinearLayout) findViewById(R.id.locations_view);
+				locationsView.setVisibility(View.GONE);
+
+				TextView ageAndGenderLabel = (TextView) findViewById(R.id.age_and_gender_label);
+				ageAndGenderLabel.setSelected(true);
+
+				TextView locationsLabel = (TextView) findViewById(R.id.location_label);
+				locationsLabel.setSelected(false);
+
+			}
+
+		});
+
+		TextView locationsLabel = (TextView) findViewById(R.id.location_label);
+		locationsLabel.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// set other subviews invisible, and set age picker visible
+				LinearLayout ageAndGenderView = (LinearLayout) findViewById(R.id.age_and_gender_view);
+				ageAndGenderView.setVisibility(View.GONE);
+
+				LinearLayout locationsView = (LinearLayout) findViewById(R.id.locations_view);
+				locationsView.setVisibility(View.VISIBLE);
+
+				TextView ageAndGenderLabel = (TextView) findViewById(R.id.age_and_gender_label);
+				ageAndGenderLabel.setSelected(false);
+
+				TextView locationsLabel = (TextView) findViewById(R.id.location_label);
+				locationsLabel.setSelected(true);
+			}
+
+		});
+
 		Button confirmButton = (Button) findViewById(R.id.confirm_profile_button);
 		confirmButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
+				saveChanges();
 				updateProfile();
 				Toast.makeText(ProfileActivity.this, "Changes saved", Toast.LENGTH_SHORT).show();
-				Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
-				startActivity(intent);
+				nextActivityIntent.setClass(ProfileActivity.this, HomeActivity.class);
+				startActivity(nextActivityIntent);
 			}
 
 		});
+
+	}
+
+	private void loadValues() {
+		SharedPreferences prefs = getPreferences(Context.MODE_PRIVATE);
+		int age = prefs.getInt("age", -1);
+		int gender = prefs.getInt("gender", 0);
+		int loc = prefs.getInt("loc", 0);
+
+		// if non-default
+		if (gender != 0) {
+			((RadioGroup) findViewById(R.id.gender_group)).check(gender);
+		}
+
+		if (loc != 0) {
+			((RadioGroup) findViewById(R.id.locations_group)).check(loc);
+		}
+
+		if (age >= 0) {
+			((NumberPicker) findViewById(R.id.age_picker)).setValue(age);
+		}
+
+	}
+
+	private void saveChanges() {
+		SharedPreferences.Editor prefs = getPreferences(Context.MODE_PRIVATE).edit();
+
+		int age = ((NumberPicker) findViewById(R.id.age_picker)).getValue();
+		int gender = ((RadioGroup) findViewById(R.id.gender_group)).getCheckedRadioButtonId();
+		int loc = ((RadioGroup) findViewById(R.id.locations_group)).getCheckedRadioButtonId();
+
+		prefs.putInt("age", age);
+		prefs.putInt("gender", gender);
+		prefs.putInt("loc", loc);
+
+		prefs.commit();
 	}
 
 	private void updateProfile() {
@@ -89,6 +176,7 @@ public class ProfileActivity extends BaseActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+		loadValues();
 	}
 
 	@Override

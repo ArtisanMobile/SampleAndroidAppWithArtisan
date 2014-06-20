@@ -1,6 +1,5 @@
 package com.artisan.android.demo.activity;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -26,7 +26,7 @@ public class BaseActivity extends ArtisanActivity {
 	protected final LocalStorageManager storageManager = new LocalStorageManager();
 	protected final Intent nextActivityIntent = new Intent();
 	protected Menu optionsMenu;
-	protected int cartItems = 0;
+	protected static ShoppingCart shoppingCart;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,7 @@ public class BaseActivity extends ArtisanActivity {
 	protected void onStart() {
 		super.onStart();
 		storageManager.start(this);
+		storageManager.loadShoppingCart(cartListener);
 	}
 
 	@Override
@@ -65,8 +66,8 @@ public class BaseActivity extends ArtisanActivity {
 
 	protected LocalStorageListener<ShoppingCart> cartListener = new LocalStorageListener<ShoppingCart>() {
 		public void onLoadComplete(ShoppingCart savedData) {
-			cartItems = savedData.getItems().size();
-			updateOptionsMenu(cartItems);
+			shoppingCart = new ShoppingCart(BaseActivity.this);
+			updateOptionsMenu(shoppingCart.getItems().size());
 		}
 
 		public void onError(LocalStorageException e) {
@@ -87,16 +88,22 @@ public class BaseActivity extends ArtisanActivity {
 				}
 
 			});
+			ImageView redCircleView = (ImageView) badgeLayout.findViewById(R.id.red_circle);
+			redCircleView.setVisibility(View.VISIBLE);
+
 			TextView itemView = (TextView) badgeLayout.findViewById(R.id.actionbar_notifcation_textview);
 			itemView.setText(String.valueOf(cartItems));
 			itemView.setVisibility(View.VISIBLE);
 
 			if (cartItems == 0) {
 				itemView.setVisibility(View.GONE);
+				redCircleView.setVisibility(View.GONE);
 			}
+
 		} catch (NullPointerException e) {
 			// optionsMenu is null because onCreateOptionsMenu doesn't get called
 		}
+
 	}
 
 	@Override
