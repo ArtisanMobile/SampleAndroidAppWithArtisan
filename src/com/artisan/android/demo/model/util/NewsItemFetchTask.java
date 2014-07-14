@@ -17,13 +17,13 @@ import android.support.v4.content.LocalBroadcastManager;
 import com.artisan.android.demo.model.NewsItem;
 import com.artisan.android.demo.model.NewsItemResults;
 
-public class NewsItemFetcher extends AsyncTask<Void, Void, String> {
+public class NewsItemFetchTask extends AsyncTask<Void, Void, String> {
 
 	public static final String BROADCAST_NEWS_UPDATE = "NewsUpdateAvailable";
 	private Context context;
 	private List<NewsItem> newsItems;
 
-	public NewsItemFetcher(Context context) {
+	public NewsItemFetchTask(Context context) {
 		this.context = context;
 	}
 

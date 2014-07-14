@@ -11,19 +11,19 @@ import android.content.IntentFilter;
 import android.support.v4.content.LocalBroadcastManager;
 
 import com.artisan.android.demo.model.NewsItem;
-import com.artisan.android.demo.model.util.NewsItemFetcher;
+import com.artisan.android.demo.model.util.NewsItemFetchTask;
 
 public class NewsFeed extends BroadcastReceiver {
 
 	private List<NewsItem> modelSet;
-	private NewsItemFetcher fetcher;
+	private NewsItemFetchTask fetchTask;
 
 	public NewsFeed(Context context) {
 		modelSet = new ArrayList<NewsItem>();
-		fetcher = new NewsItemFetcher(context);
-		fetcher.execute();
+		fetchTask = new NewsItemFetchTask(context);
+		fetchTask.execute();
 		IntentFilter newsEvents = new IntentFilter();
-		newsEvents.addAction(NewsItemFetcher.BROADCAST_NEWS_UPDATE);
+		newsEvents.addAction(NewsItemFetchTask.BROADCAST_NEWS_UPDATE);
 		LocalBroadcastManager.getInstance(context).registerReceiver(this, newsEvents);
 	}
 
@@ -37,8 +37,8 @@ public class NewsFeed extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		if (NewsItemFetcher.BROADCAST_NEWS_UPDATE.equals(intent.getAction())) {
-			this.modelSet = fetcher.getNewsItems();
+		if (NewsItemFetchTask.BROADCAST_NEWS_UPDATE.equals(intent.getAction())) {
+			this.modelSet = fetchTask.getNewsItems();
 		}
 	}
 }
