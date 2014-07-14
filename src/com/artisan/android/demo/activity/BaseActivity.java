@@ -81,7 +81,6 @@ public class BaseActivity extends ArtisanActivity {
 			RelativeLayout badgeLayout = (RelativeLayout) optionsMenu.findItem(R.id.action_bar_checkout).getActionView();
 			optionsMenu.getItem(1).getActionView().setOnClickListener(new OnClickListener() {
 
-				@Override
 				public void onClick(View v) {
 					nextActivityIntent.setClass(BaseActivity.this, CheckoutActivity.class);
 					startActivity(nextActivityIntent);

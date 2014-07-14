@@ -63,17 +63,14 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 		try {
 			File outFile = new File(this.getFilesDir(), filename);
 			if (!outFile.exists()) {
-				Log.d(TAG, String.format("Copying %s from assets to internal storage.", filename));
 				InputStream in = assetManager.open(filename);
 				OutputStream out = new FileOutputStream(outFile);
 				copyFile(in, out);
 				in.close();
 				out.flush();
 				out.close();
-			} else {
-				Log.d(TAG, String.format("File %s already exists in internal storage, did not copy.", filename));
 			}
-		} catch(IOException e) {
+		} catch (IOException e) {
 			Log.e(TAG, "Failed to copy asset file: " + filename, e);
 		}
 	}
@@ -81,7 +78,7 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 	private void copyFile(InputStream in, OutputStream out) throws IOException {
 		byte[] buffer = new byte[1024];
 		int read;
-		while((read = in.read(buffer)) != -1){
+		while ((read = in.read(buffer)) != -1) {
 			out.write(buffer, 0, read);
 		}
 	}
@@ -91,6 +88,7 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 		ArtisanProfileManager.registerDateTime("lastSeenAt");
 		ArtisanProfileManager.registerLocation("lastKnownLocation");
 		ArtisanProfileManager.registerNumber("totalOrderCount", ArtisanDemoApplication.totalOrderCount);
+		ArtisanProfileManager.registerNumber("ordertotal");
 		ArtisanProfileManager.registerString("visitorType", "anonymous");
 
 		// These are just examples of using the . We don't have real profile information for this app

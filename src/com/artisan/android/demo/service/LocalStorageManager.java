@@ -36,7 +36,7 @@ public class LocalStorageManager {
 
 	public class LocalStorageException extends Exception {
 
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 8652902866925475220L;
 
 		public LocalStorageException(String detailMessage, Throwable throwable) {
 			super(detailMessage, throwable);
@@ -122,7 +122,7 @@ public class LocalStorageManager {
 			this.exceptionCause = cause;
 		}
 
-		public CallbackRunnable(LocalStorageListener<ResultType> listener, ResultType result) {
+		public CallbackRunnable (LocalStorageListener<ResultType> listener, ResultType result) {
 			this.listener = listener;
 			this.result = result;
 		};

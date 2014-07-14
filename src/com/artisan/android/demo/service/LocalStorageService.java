@@ -7,6 +7,7 @@ import android.os.IBinder;
 
 import com.artisan.android.demo.model.collection.NewsFeed;
 import com.artisan.android.demo.model.collection.ShoppingCart;
+import com.artisan.incodeapi.ArtisanPurchaseWorkflowManager;
 
 public class LocalStorageService extends Service{
 
@@ -26,8 +27,15 @@ public class LocalStorageService extends Service{
 	}
 
 	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		if (sharedCart.getItems().size() > 0) {
+			ArtisanPurchaseWorkflowManager.cartWasAbandoned();
+		}
+	}
+
+	@Override
 	public IBinder onBind(Intent intent) {
-		// TODO Auto-generated method stub
 		return new ServiceBinder();
 	}
 

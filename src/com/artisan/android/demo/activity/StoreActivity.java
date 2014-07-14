@@ -78,7 +78,7 @@ public class StoreActivity extends BaseActivity {
 		String detailTitle = itemTitles[clickedIndex];
 		String detailTitleLong = itemLongTitles[clickedIndex];
 		String detailDescription = getString(R.string.ipsum);
-		String detailPrice = "$10.00";
+		double detailPrice = (clickedIndex + 1) * 10 - 0.01;
 
 		CartItem selectedItem = new CartItem(Integer.toString(clickedIndex));
 		selectedItem.setPictureRes(detailDrawable);

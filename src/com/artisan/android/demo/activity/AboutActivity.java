@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.artisan.android.demo.R;
+import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.powerhooks.PowerHookManager;
 
 public class AboutActivity extends BaseActivity {
@@ -32,6 +33,7 @@ public class AboutActivity extends BaseActivity {
 	}
 
 	public void visitWebsite(View v) {
+		ArtisanTrackingManager.trackEvent("Visit Website Clicked");
 		Intent urlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(PowerHookManager.getVariableValue("website_url")));
 		startActivity(urlIntent);
 	}

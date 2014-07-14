@@ -1,6 +1,6 @@
 package com.artisan.android.demo.model;
 
-import org.codehaus.jackson.annotate.JsonCreator;
+
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
@@ -8,6 +8,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NewsItem {
 
+	@JsonProperty("id")
 	private String id;
 
 	private static final String DEFAULT_ICON_RES_NAME = "collections_view_as_list";
@@ -37,9 +38,8 @@ public class NewsItem {
 		private String tags;
 	}
 
-	@JsonCreator
-	public NewsItem(@JsonProperty("id") String id) {
-		this.id = id;
+	public NewsItem() {
+		// default constructor for Jackson
 	}
 
 	@JsonProperty("value")

@@ -33,7 +33,6 @@ public class JsonSerializer<JacksonAnnotatedType> {
 			try {
 				JavaType containerType = mapper.getTypeFactory().constructCollectionType(LinkedHashSet.class, annotatedClass);
 				LinkedHashSet<JacksonAnnotatedType> deserializedObject = mapper.readValue(jsonFile, containerType);
-				System.out.println(deserializedObject.toString());
 				return deserializedObject;
 			} catch (IOException e) {
 				String message = String.format("Error loading JSON file '%s' from disk", filePath);

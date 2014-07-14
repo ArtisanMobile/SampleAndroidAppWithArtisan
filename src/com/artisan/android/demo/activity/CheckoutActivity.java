@@ -29,6 +29,7 @@ import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
 import com.artisan.incodeapi.ArtisanProfileManager;
+import com.artisan.incodeapi.ArtisanPurchaseWorkflowManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.powerhooks.PowerHookManager;
 
@@ -125,7 +126,7 @@ public class CheckoutActivity extends BaseActivity {
 			image.setImageResource(cartItem.getPictureRes());
 
 			title.setText(cartItem.getTitleLong());
-			subtitle.setText(cartItem.getPrice());
+			subtitle.setText(cartItem.getPriceString());
 			removeButton.setTag(R.id.tag_list_item_position, position);
 			removeButton.setOnClickListener(removeButtonListener);
 			removeButton.setText(PowerHookManager.getVariableValue("cart_item_remove"));
@@ -135,7 +136,6 @@ public class CheckoutActivity extends BaseActivity {
 		private View.OnClickListener removeButtonListener = new View.OnClickListener() {
 
 			public void onClick(View v) {
-
 				int clickedPosition = (Integer) v.getTag(R.id.tag_list_item_position);
 				CartItem itemToRemove = getItem(clickedPosition);
 				checkoutAdapter.remove(itemToRemove);
@@ -166,7 +166,7 @@ public class CheckoutActivity extends BaseActivity {
 			CartItem cartItem = checkoutAdapter.getItem(i);
 			BigDecimal price = new BigDecimal("0");
 			try {
-				price = new BigDecimal(cartItem.getPrice().substring(1));
+				price = new BigDecimal(cartItem.getPrice());
 			} catch (ParseException e) {
 				Log.e(TAG, e.getMessage(), e);
 			}
@@ -178,10 +178,10 @@ public class CheckoutActivity extends BaseActivity {
 	}
 
 	public void onCheckout(View v) {
-		for (CartItem cartItem : shoppingCart.getItems()) {
-			checkoutAdapter.remove(cartItem);
-			shoppingCart.removeItem(cartItem);
-		}
+		ArtisanPurchaseWorkflowManager.cartCheckoutSucceededWithShippingAndTax(0, 0);
+
+		shoppingCart.removeAll();
+		checkoutAdapter.clear();
 
 		// refresh detail screens
 		StoreDetailActivity.finishAll();

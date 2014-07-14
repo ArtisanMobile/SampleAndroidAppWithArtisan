@@ -59,7 +59,6 @@ public class ProfileActivity extends BaseActivity {
 
 		ageAndGenderLabel.setOnClickListener(new OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				// set other subviews invisible, and set age picker visible
 				LinearLayout ageAndGenderView = (LinearLayout) findViewById(R.id.age_and_gender_view);
@@ -81,7 +80,6 @@ public class ProfileActivity extends BaseActivity {
 		TextView locationsLabel = (TextView) findViewById(R.id.location_label);
 		locationsLabel.setOnClickListener(new OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				// set other subviews invisible, and set age picker visible
 				LinearLayout ageAndGenderView = (LinearLayout) findViewById(R.id.age_and_gender_view);
@@ -102,7 +100,6 @@ public class ProfileActivity extends BaseActivity {
 		Button confirmButton = (Button) findViewById(R.id.confirm_profile_button);
 		confirmButton.setOnClickListener(new OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				saveChanges();
 				updateProfile();

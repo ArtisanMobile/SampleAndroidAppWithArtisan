@@ -2,7 +2,9 @@ package com.artisan.android.demo.activity;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Currency;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 import org.codehaus.jackson.map.ObjectMapper;
@@ -24,6 +26,7 @@ import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
 import com.artisan.incodeapi.ArtisanExperimentManager;
+import com.artisan.incodeapi.ArtisanPurchaseWorkflowManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.powerhooks.PowerHookManager;
 
@@ -76,13 +79,16 @@ public class StoreDetailActivity extends BaseActivity {
 			itemImage.setImageResource(selectedItem.getPictureRes());
 			itemTitle.setText((selectedItem.getTitleLong()));
 			itemDescription.setText(selectedItem.getDescription());
-			itemPrice.setText(selectedItem.getPrice());
+			itemPrice.setText(selectedItem.getPriceString());
+
+			ArtisanPurchaseWorkflowManager.productViewed(selectedItem.getId(), selectedItem.getPrice(), Currency.getInstance(Locale.US), selectedItem.getDescription(), null, null);
 		} catch (IOException e) {
 			Log.e(TAG, "Error deserializing store item data", e);
 		}
 	}
 
-	protected void onDestroy() {
+	@Override
+	public void onDestroy() {
 		super.onDestroy();
 		activities.remove(this);
 	}
@@ -161,7 +167,7 @@ public class StoreDetailActivity extends BaseActivity {
 			// CUSTOM ANALYTICS EVENT
 			Map<String, String> itemDetails = new HashMap<String, String>();
 			itemDetails.put("selected item", "" + selectedItem.getTitleShort());
-			itemDetails.put("price", "" + selectedItem.getPrice());
+			itemDetails.put("price", "" + selectedItem.getPriceString());
 			ArtisanTrackingManager.trackEvent("Item added to cart", itemDetails);
 
 			// update cart icon
@@ -180,7 +186,7 @@ public class StoreDetailActivity extends BaseActivity {
 		// CUSTOM ANALYTICS EVENT
 		Map<String, String> itemDetails = new HashMap<String, String>();
 		itemDetails.put("selected item", "" + selectedItem.getTitleShort());
-		itemDetails.put("price", "" + selectedItem.getPrice());
+		itemDetails.put("price", "" + selectedItem.getPriceString());
 		ArtisanTrackingManager.trackEvent("Buy now button clicked", itemDetails);
 
 		boolean success = addSelectedItemToCart(v);

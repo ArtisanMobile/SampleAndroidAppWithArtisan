@@ -1,5 +1,8 @@
 package com.artisan.android.demo.model;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonProperty;
 
@@ -10,7 +13,7 @@ public class CartItem {
 	private String titleShort;
 	private String titleLong;
 	private String description;
-	private String price;
+	private double price;
 
 	@JsonCreator
 	public CartItem(@JsonProperty("id") String id) {
@@ -57,11 +60,16 @@ public class CartItem {
 		this.description = description;
 	}
 
-	public String getPrice() {
+	@org.codehaus.jackson.annotate.JsonIgnore
+	public String getPriceString() {
+		return NumberFormat.getCurrencyInstance(Locale.US).format(price);
+	}
+
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(String price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
