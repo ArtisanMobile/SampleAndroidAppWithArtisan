@@ -57,5 +57,29 @@
 
 ## Version 2.1.3
 
+* Added preliminary support for Artisan Push. Recommended to upgrade to 2.1.4 if you would like to take advantage of Campaigns and Artisan Push.
+
+## Version 2.1.4
+
 * We have added support for Artisan Push Messaging. Now you can send targeted push messages via Artisan to your users. Push messages will appear in the notification center and can trigger app opening and/or the executing of Artisan Power Hooks.
 
+## Version 2.1.5
+
+* Minor release. Sending device id when authenticating with Artisan Tools as a precursor to device whitelisting.
+
+## Version 2.1.6
+
+* Add ArtisanFragmentActivity as convenient base class for apps that use FragmentActivities.
+* Minor fix for when the profile file is loaded at the first startup.
+
+## Version 2.1.7
+
+* Added ArtisanPurchaseWorkflowManager for tracking of commerce-specific analytics.
+* Added ArtisanSocialSharingManager for tracking of social share events for analytics.
+* Added playlist and power hook callbacks for Android! Now you can register for callbacks when the first playlist is downloaded, or when you power hook values change. You can even grab a reference to an individual power hook and register a call back for when that specific value changes.
+* We now support the option to automatically clear a notification after it is opened. Look for the option when you are creating your Artisan Push Campaign.
+* Fixed bug with Push Notification open actions so that the app is actually launched. This defect was introduced when we rolled out the auto-clear feature above. If you are using Artisan Push we recommend that you upgrade to Android 2.1.7 to get this fix.
+
+## Version 2.1.8
+
+* Fixed critical bug that was preventing the Artisan Playlist from downloading for some customers. This bug was introduced in 2.1.7, so you should upgrade if you were using 2.1.7.
