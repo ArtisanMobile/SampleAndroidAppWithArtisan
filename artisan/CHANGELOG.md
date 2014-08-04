@@ -83,3 +83,12 @@
 ## Version 2.1.8
 
 * Fixed critical bug that was preventing the Artisan Playlist from downloading for some customers. This bug was introduced in 2.1.7, so you should upgrade if you were using 2.1.7.
+
+## Version 2.1.9
+
+* Added optional flags to the API so that you can disable the artisan gesture in production and prevent the Artisan Gesture overlay from being added to your Activities. For non-production builds there is also a new disableGestureAndLoginOnForeground method that is an alternative for connecting to Artisan without the gesture. 
+
+## Version 2.2.0
+
+* Added support for the Artisan Hybrid SDK -- now you can use Artisan's APIs in your webviews!
+
