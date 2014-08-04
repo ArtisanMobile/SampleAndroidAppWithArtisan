@@ -57,8 +57,6 @@ public class RequestDemoActivity extends BaseActivity {
 
 			String subject = "";
 
-			// TODO check if textutils works on string obj instead of
-			// editabletext
 			if (!nameText.equals(null)) {
 				subject = nameText + " ";
 				contactInfo.put("name", nameText.toString());
@@ -72,12 +70,6 @@ public class RequestDemoActivity extends BaseActivity {
 				contactInfo.put("company", companyNameText.toString());
 			}
 			subject += "Interested in Artisan for Android";
-
-			// CUSTOM ANALYTICS EVENT
-			ArtisanTrackingManager.trackEvent("contactArtisan pressed", contactInfo);
-
-			// Update user profile variable
-			ArtisanProfileManager.setStringValue("visitorType", "contacted");
 
 			Intent intent = new Intent(Intent.ACTION_SENDTO);
 			intent.setData(Uri.parse("mailto:")); // only email apps should
