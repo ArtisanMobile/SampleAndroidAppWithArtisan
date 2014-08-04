@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script type="text/javascript" src="http://cdn-api.artisantools.com/1.0/ArtisanSDK-min.js"></script>
+	<script type="text/javascript">
+	
+		function contactArtisan() {
+			
+			ArtisanSDK.setStringValue("visitorType", "contacted");
+			var name = document.getElementById("first-name-input").value;
+			var company = document.getElementById("company-name-input").value;
+			ContactArtisan.contactArtisan(name, company);
+		}
+        
+	</script>
+	<style>
+	    body {color:#FFFFFF;}
+	</style>
+	
+</head>
+<body bgcolor="black">
+	<script type="text/javascript">
+		document.write(ArtisanSDK.getValueForHookById("request_demo_heading"));
+	</script>
+	<br>
+	Send us an email and an Artisan representative will be in touch soon. Thank you for your interest in Artisan!
+	<form>
+		First Name
+		<input type="text" id="first-name-input"><br>
+		Company Name
+		<input type="text" id="company-name-input">
+	</form>
+	
+	<input type="button" id="contact-artisan-button" value="Contact Us" onclick='contactArtisan()' style="width: 300px;height: 75px;">
+</body>
+</html>
