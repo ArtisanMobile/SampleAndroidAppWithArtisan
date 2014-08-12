@@ -13,23 +13,39 @@
         
 	</script>
 	<style>
-	    body {color:#FFFFFF;}
+	    body {
+	    	background-color:black;
+	    	color:white;
+	    }
+	    form {
+	    	padding: 10px 0px 10px 0px;
+	    }
+	    form input {
+	    	width: 200px;
+	    	height: 50px;
+	    }
+	    #contact-artisan-button {
+	    	margin-top:20px;
+	    	width: 300px;
+	    	height: 60px;
+	    }
 	</style>
 	
 </head>
-<body bgcolor="black">
+<body>
+	<p>
 	<script type="text/javascript">
 		document.write(ArtisanSDK.getValueForHookById("request_demo_heading"));
 	</script>
-	<br>
-	Send us an email and an Artisan representative will be in touch soon. Thank you for your interest in Artisan!
+	</p>
+	<p>Send us an email and we will be in touch soon.</p>
 	<form>
-		First Name
+		Name
 		<input type="text" id="first-name-input"><br>
-		Company Name
+		Company
 		<input type="text" id="company-name-input">
 	</form>
 	
-	<input type="button" id="contact-artisan-button" value="Contact Us" onclick='contactArtisan()' style="width: 300px;height: 75px;">
+	<input type="button" id="contact-artisan-button" value="Contact Us" onclick='contactArtisan()' >
 </body>
 </html>
