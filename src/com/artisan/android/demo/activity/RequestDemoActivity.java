@@ -8,14 +8,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
 import com.artisan.android.demo.R;
 import com.artisan.hybrid.ArtisanJavascriptBridge;
-import com.artisan.incodeapi.ArtisanProfileManager;
-import com.artisan.incodeapi.ArtisanTrackingManager;
 
 public class RequestDemoActivity extends BaseActivity {
 
