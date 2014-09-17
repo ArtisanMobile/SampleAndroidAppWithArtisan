@@ -10,38 +10,72 @@
         android:columnCount="3"
         android:padding="@dimen/page_padding_standard" >
 
-        <ImageView
-            android:id="@id/activity_home_grid"
-            style="@style/ImageTile.Home.Tall"
+        <GridLayout
+            android:id="@+id/aboutNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_columnSpan="3"
-            android:onClick="navigateToAbout"
-            android:src="@drawable/home_tile_artisan" />
+            android:layout_gravity="center_horizontal"
+            android:columnCount="1" >
 
-        <Space
-            android:layout_height="@dimen/page_padding_standard"
-            android:layout_columnSpan="3" />
+            <ImageView
+                android:id="@+id/navigateToAbout"
+                style="@style/ImageTile.Home.Tall"
+                android:layout_columnSpan="1"
+                android:onClick="navigateToAbout"
+                android:src="@drawable/home_tile_artisan" />
 
-        <ImageView
-            style="@style/ImageTile.Home"
+            <Space
+                android:layout_height="@dimen/page_padding_standard"
+                android:layout_columnSpan="1" />
+        </GridLayout>
+
+        <GridLayout
+			android:id="@+id/storeNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_columnSpan="3"
-            android:onClick="navigateToStore"
-            android:src="@drawable/home_tile_store" />
+            android:layout_gravity="center_horizontal"
+            android:columnCount="1" >
 
-        <Space
-            android:layout_height="@dimen/page_padding_standard"
-            android:layout_columnSpan="3" />
+            <ImageView
+                android:id="@+id/navigateToStore"
+                style="@style/ImageTile.Home"
+                android:layout_columnSpan="1"
+                android:onClick="navigateToStore"
+                android:src="@drawable/home_tile_store" />
 
-        <ImageView
-            style="@style/ImageTile.Home.Square"
-            android:src="@drawable/home_tile_news"
-            android:onClick="navigateToNews"/>
+            <Space
+                android:layout_height="@dimen/page_padding_standard"
+                android:layout_columnSpan="1" />
+        </GridLayout>
 
-        <Space android:layout_width="@dimen/page_padding_standard" />
+        <GridLayout
+            android:id="@+id/otherNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="3" >
 
-        <ImageView
-            style="@style/ImageTile.Home.Square"
-            android:src="@drawable/home_tile_demo"
-            android:onClick="navigateToRequestDemo"/>
+            <ImageView
+                android:id="@+id/navigateToNews"
+                style="@style/ImageTile.Home.Square"
+                android:onClick="navigateToNews"
+                android:src="@drawable/home_tile_news" />
+
+            <Space android:layout_width="@dimen/page_padding_standard" />
+
+            <ImageView
+                android:id="@+id/navigateToRequestDemo"
+                style="@style/ImageTile.Home.Square"
+                android:onClick="navigateToRequestDemo"
+                android:src="@drawable/home_tile_demo" />
+
+            <Space
+                android:layout_height="@dimen/page_padding_standard"
+                android:layout_columnSpan="3" />
+        </GridLayout>
     </GridLayout>
 
 </ScrollView>

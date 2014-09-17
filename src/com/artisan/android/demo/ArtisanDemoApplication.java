@@ -114,20 +114,23 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 
 	@Override
 	public void registerPowerhooks() {
+
+		// Register Power Hook Variables
+
+		PowerHookManager.registerVariable("home_page_ordering", "How to order items on the home page.", "about|store|other");
 		PowerHookManager.registerVariable("welcome_text", "Welcome Text Sample PowerHook", "Welcome to Artisan!");
 		PowerHookManager.registerVariable("purchase_thanks", "Thank you message after purchase", "Thank you for your purchase! Your order is on its way.");
-
 		PowerHookManager.registerVariable("request_demo_heading", "Text at the top of the request demo screen", this.getString(R.string.request_demo_heading));
-
 		PowerHookManager.registerVariable("store_detail_checkout", "Buy now button text", this.getString(R.string.store_detail_checkout));
 		PowerHookManager.registerVariable("store_detail_add_to_cart", "Add to cart button text", this.getString(R.string.store_detail_add_to_cart));
 		PowerHookManager.registerVariable("checkout_submit", "Checkout button text", this.getString(R.string.checkout_submit));
 		PowerHookManager.registerVariable("cart_item_remove", "Remove cart item text", this.getString(R.string.cart_item_remove));
 		PowerHookManager.registerVariable("cart_empty", "Cart empty text", this.getString(R.string.cart_empty));
 		PowerHookManager.registerVariable("cart_total", "Cart total text", this.getString(R.string.cart_total));
-
 		PowerHookManager.registerVariable("visit_website", "Visit website button text", this.getString(R.string.visit_website));
 		PowerHookManager.registerVariable("website_url", "Website URL", this.getString(R.string.website_url));
+
+		// Register Power Hook Blocks
 
 		HashMap<String, String> defaultData = new HashMap<String, String>();
 		defaultData.put("message", "Check out now and get ##discountAmount## off of your purchase. We've added discount code ##discountCode## to your cart.");
