@@ -99,7 +99,17 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 
 		// You can also register and set separately using the set methods. These are just a few examples
 		ArtisanProfileManager.setDateTimeValue("lastSeenAt", new Date());
-		// ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102));
+
+		// Here are some sample locations to test with
+		// ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(37.7577, -122.4376)); // San Francisco, CA
+		ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(40.7056308, -73.9780035)); // NYC
+		// ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.7643389,-104.8551114)); // Denver, CO
+		// ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(-82.86275189999999, -135)); // Antartica
+		// ArtisanProfileManager.setLocationValue("lastKnownLocation", new ArtisanLocationValue(39.949920, -75.145102)); // Philly
+
+		ArtisanProfileManager.setOptedOutOfEmail(false);
+		ArtisanProfileManager.setOptedOutOfPush(false);
+		ArtisanProfileManager.setOptedOutOfText(false);
 	}
 
 	@Override
