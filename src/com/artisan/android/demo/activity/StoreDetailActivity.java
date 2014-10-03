@@ -28,6 +28,7 @@ import com.artisan.android.demo.service.LocalStorageManager.LocalStorageExceptio
 import com.artisan.incodeapi.ArtisanExperimentManager;
 import com.artisan.incodeapi.ArtisanPurchaseWorkflowManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
+import com.artisan.incodeapi.InCodeExperimentDetails;
 import com.artisan.powerhooks.PowerHookManager;
 
 public class StoreDetailActivity extends BaseActivity {
@@ -133,6 +134,12 @@ public class StoreDetailActivity extends BaseActivity {
 			Log.d(TAG, "Current Variant for Buy Now Experiment: Orange Button");
 			hideAddToCartButton();
 			setBuyButtonResource(R.drawable.btn_long_orange);
+		}
+
+		Map<String, InCodeExperimentDetails> inCodeDetails = ArtisanExperimentManager.getInCodeExperimentDetails();
+		InCodeExperimentDetails buyNowDetails = inCodeDetails.get(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
+		if (buyNowDetails.isRunning()) {
+			Log.d(TAG, buyNowDetails.toString());
 		}
 	}
 

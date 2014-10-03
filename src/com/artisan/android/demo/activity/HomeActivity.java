@@ -1,10 +1,16 @@
 package com.artisan.android.demo.activity;
 
+import java.util.List;
+import java.util.Set;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.GridLayout;
 
 import com.artisan.android.demo.R;
+import com.artisan.incodeapi.ArtisanExperimentManager;
+import com.artisan.incodeapi.ExperimentDetails;
 import com.artisan.manager.ArtisanManager;
 import com.artisan.manager.ArtisanManagerCallback;
 import com.artisan.powerhooks.PowerHookManager;
@@ -20,6 +26,24 @@ public class HomeActivity extends BaseActivity {
 
 			public void execute() {
 				reorderHomePageBasedOnPowerHook();
+
+				List<ExperimentDetails> experimentDetails = ArtisanExperimentManager.getCurrentExperimentDetails();
+				for (ExperimentDetails experiment : experimentDetails) {
+					// unique identifier for this experiment (alphanumeric)
+					String experimentID = experiment.getExperimentId();
+
+					// human-friendly name for this experiment, as you see in Artisan Tools
+					String experimentName = experiment.getExperimentName();
+
+					// unique identifier for this variation (alphanumeric)
+					String currentVariationId = experiment.getCurrentVariationId();
+
+					// human-friendly name for this variation, as you see in Artisan Tools
+					String currentVariationName = experiment.getCurrentVariationName();
+
+					Log.d("Just Testing", "Experiment: " + experimentName + " (" + experimentID + ") variation: " + currentVariationName + " (" + currentVariationId + ")");
+				}
+				Set<String> currentVariationIds = ArtisanExperimentManager.getCurrentVariationIds();
 			}
 		});
 	}
