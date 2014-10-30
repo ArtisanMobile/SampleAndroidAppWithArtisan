@@ -24,7 +24,7 @@ public class ShoppingCart extends ModelContainerSet<CartItem> {
 	public boolean addItem(CartItem item) {
 		boolean added = super.addItem(item);
 		if (added) {
-			ArtisanPurchaseWorkflowManager.addItemToCart(item.getId(), item.getPrice(), Currency.getInstance(Locale.US), item.getDescription(), null, 1, null);
+			ArtisanPurchaseWorkflowManager.addItemToCart(item.getId(), item.getPrice(), Currency.getInstance(Locale.US), item.getDescription(), item.getCategory(), item.getSubCategory(), item.getSubSubCategory(), 1, null);
 		}
 		return added;
 	}
@@ -33,7 +33,7 @@ public class ShoppingCart extends ModelContainerSet<CartItem> {
 	public boolean removeItem(CartItem item) {
 		boolean removed = super.removeItem(item);
 		if (removed) {
-			ArtisanPurchaseWorkflowManager.removeItemFromCart(item.getId(), item.getPrice(), item.getDescription(), null, 1);
+			ArtisanPurchaseWorkflowManager.removeItemFromCart(item.getId(), item.getPrice(), item.getDescription(), 1);
 		}
 		return removed;
 	}

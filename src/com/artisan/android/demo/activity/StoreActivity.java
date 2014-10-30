@@ -86,6 +86,15 @@ public class StoreActivity extends BaseActivity {
 		selectedItem.setTitleLong(detailTitleLong);
 		selectedItem.setDescription(detailDescription);
 		selectedItem.setPrice(detailPrice);
+		if (detailTitle.contains("Mug")) {
+			selectedItem.setCategory("House");
+			selectedItem.setSubCategory("Kitchen");
+			selectedItem.setSubSubCategory("Mugs");
+		} else {
+			selectedItem.setCategory("Clothing");
+			selectedItem.setSubCategory("Tops");
+			selectedItem.setSubSubCategory("T-Shirts");
+		}
 
 		itemDrawables.recycle();
 

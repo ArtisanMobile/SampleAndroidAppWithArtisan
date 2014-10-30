@@ -82,7 +82,7 @@ public class StoreDetailActivity extends BaseActivity {
 			itemDescription.setText(selectedItem.getDescription());
 			itemPrice.setText(selectedItem.getPriceString());
 
-			ArtisanPurchaseWorkflowManager.productViewed(selectedItem.getId(), selectedItem.getPrice(), Currency.getInstance(Locale.US), selectedItem.getDescription(), null, null);
+			ArtisanPurchaseWorkflowManager.productViewed(selectedItem.getId(), selectedItem.getPrice(), Currency.getInstance(Locale.US), selectedItem.getDescription(), selectedItem.getCategory(), selectedItem.getSubCategory(), selectedItem.getSubSubCategory(), null);
 		} catch (IOException e) {
 			Log.e(TAG, "Error deserializing store item data", e);
 		}

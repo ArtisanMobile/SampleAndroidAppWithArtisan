@@ -13,6 +13,9 @@ public class CartItem {
 	private String titleShort;
 	private String titleLong;
 	private String description;
+	private String category;
+	private String subCategory;
+	private String subSubCategory;
 	private double price;
 
 	@JsonCreator
@@ -98,5 +101,27 @@ public class CartItem {
 		return true;
 	}
 
+	public String getCategory() {
+		return category;
+	}
 
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getSubCategory() {
+		return subCategory;
+	}
+
+	public void setSubCategory(String subCategory) {
+		this.subCategory = subCategory;
+	}
+
+	public String getSubSubCategory() {
+		return subSubCategory;
+	}
+
+	public void setSubSubCategory(String subSubCategory) {
+		this.subSubCategory = subSubCategory;
+	}
 }
