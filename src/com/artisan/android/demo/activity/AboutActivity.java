@@ -22,8 +22,12 @@ public class AboutActivity extends BaseActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+
+		// API EXAMPLE: Showing a toast message when you enter this screen with a Power Hook value that is configurable from Artisan Tools
 		Toast.makeText(this, PowerHookManager.getVariableValue("welcome_text"), Toast.LENGTH_SHORT).show();
+
 		Button visitWebsiteButton = (Button) this.findViewById(R.id.activity_about_visit_website);
+		// API EXAMPLE: Setting the text on the button with the text from a Power Hook. This value is configurable from Artisan Tools.
 		visitWebsiteButton.setText(PowerHookManager.getVariableValue("visit_website"));
 	}
 

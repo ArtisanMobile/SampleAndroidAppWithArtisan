@@ -71,11 +71,12 @@ public class CheckoutActivity extends BaseActivity {
 		storageManager.loadShoppingCart(cartListener);
 
 		Button checkoutButton = (Button) findViewById(R.id.activity_checkout_submit);
+		// API EXAMPLE: Power Hook used to set the text on a button
 		checkoutButton.setText(PowerHookManager.getVariableValue("checkout_submit"));
 
 		TextView checkoutTotalView = (TextView) findViewById(R.id.activity_checkout_total_label);
+		// API EXAMPLE: Power Hook used to set the text on a button
 		checkoutTotalView.setText(PowerHookManager.getVariableValue("cart_total"));
-
 	}
 
 	@Override
@@ -186,8 +187,7 @@ public class CheckoutActivity extends BaseActivity {
 		// refresh detail screens
 		StoreDetailActivity.finishAll();
 
-		// CUSTOM ANALYTICS EVENT
-		// Here is an example of using the Artisan Tracking Manager to track a custom analytics event with extra data
+		// API EXAMPLE: Custom Analytics Event with extra parameters
 		Map<String, String> cartInfo = new HashMap<String, String>();
 		cartInfo.put("cart total", checkoutTotal.getText().toString());
 		cartInfo.put("item count", "" + shoppingCart.getItems().size());
