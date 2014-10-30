@@ -119,7 +119,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
 In addition, the Artisan SDK uses code from the following open source projects:
 
 * Android Volley https://android.googlesource.com/platform/frameworks/volley/
-* HttpClient http://hc.apache.org/httpclient-3.x/
+* HttpMime http://hc.apache.org/httpclient-3.x/
 * Apache Commons http://commons.apache.org/
 * Jackson JSON Processor https://github.com/FasterXML/jackson
 * Otto https://github.com/square/otto

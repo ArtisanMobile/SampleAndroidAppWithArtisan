@@ -25,7 +25,6 @@ These instructions and more reference are available at http://docs.useartisan.co
 2. Download the installer from Artisan Tools. You should have a file like: YourProjectName-ArtisanInstaller.zip
 
 The following permissions are required for the Artisan Android SDK to function properly:
-  * GET_TASKS - We use this permission to detect when the app is going into the background. This allows us to download and apply view changes in a timely and seamless fashion.
   * WRITE_EXTERNAL_STORAGE - This permission is required to save the changeset data
   * INTERNET - Artisan uses the internet to download change data for modifications and A/B testing
   * ACCESS_NETWORK_STATE - This permission allows us to be smart about when we connect to the internet to download changes
@@ -252,7 +251,6 @@ Alternatively, if you can't extend ArtisanApplication you can implement the com.
 
 You will also need to add the following permissions to your AndroidManifest.xml if they aren't already set:
 
-    <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
