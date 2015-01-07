@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <array name="store_detail_drawables">
+        <item>@drawable/shirt1</item>
+        <item>@drawable/shirt2</item>
+        <item>@drawable/shirt3</item>
+        <item>@drawable/shirt4</item>
+        <item>@drawable/mug1</item>
+        <item>@drawable/mug2</item>
+    </array>
+    <string-array name="store_item_titles">
+        <item>@string/shirt_name_1</item>
+        <item>@string/shirt_name_2</item>
+        <item>@string/shirt_name_3</item>
+        <item>@string/shirt_name_4</item>
+        <item>@string/mug_name_1</item>
+        <item>@string/mug_name_2</item>
+    </string-array>
+    <string-array name="store_item_titles_long">
+        <item>@string/shirt_name_1_long</item>
+        <item>@string/shirt_name_2_long</item>
+        <item>@string/shirt_name_3_long</item>
+        <item>@string/shirt_name_4_long</item>
+        <item>@string/mug_name_1_long</item>
+        <item>@string/mug_name_2_long</item>
+    </string-array>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="mine_shaft_gray">#3E3E3E</color>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="list_item_content_height">105dp</dimen>
+    <dimen name="list_item_height">129dp</dimen>
+    <dimen name="list_item_horizontal_spacing">6dp</dimen>
+    <dimen name="list_item_vertical_padding">12dp</dimen>
+    <dimen name="no_spacing">0dp</dimen>
+    <dimen name="page_padding_extra_narrow">4dp</dimen>
+    <dimen name="page_padding_narrow">8dp</dimen>
+    <dimen name="page_padding_standard">13dp</dimen>
+    <dimen name="text_size_normal_fixed">15dp</dimen>
+    <dimen name="text_size_small_fixed">14dp</dimen>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="action_bar_checkout" type="id"/>
+    <item name="action_bar_search" type="id"/>
+    <item name="activity_about_visit_website" type="id"/>
+    <item name="activity_checkout_list" type="id"/>
+    <item name="activity_checkout_submit" type="id"/>
+    <item name="activity_checkout_total" type="id"/>
+    <item name="activity_checkout_total_container" type="id"/>
+    <item name="activity_home_grid" type="id"/>
+    <item name="activity_store_detail_add_to_cart" type="id"/>
+    <item name="activity_store_detail_button_bar" type="id"/>
+    <item name="activity_store_detail_checkout" type="id"/>
+    <item name="activity_store_detail_description" type="id"/>
+    <item name="activity_store_detail_image" type="id"/>
+    <item name="activity_store_detail_price" type="id"/>
+    <item name="activity_store_detail_title" type="id"/>
+    <item name="activity_store_grid" type="id"/>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/artisan_ids.xml -->
+    <eat-comment/>
+    <item name="artisan_view_id" type="id"/>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="list_item_action" type="id"/>
+    <item name="list_item_date" type="id"/>
+    <item name="list_item_image" type="id"/>
+    <item name="list_item_remove" type="id"/>
+    <item name="list_item_subtext" type="id"/>
+    <item name="list_item_text" type="id"/>
+    <item name="tag_list_item_position" type="id"/>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="about_artisan">At Artisan, we\'ve built a lot of mobile apps in our respective careers and now we\'re obsessed with building better mobile experiences for our clients and some of the world\'s best-known brands. We were born mobile so it\'s only natural for us to see where mobile is going. We want to help as many people as possible realize the full potential of what mobile can deliver. Artisan\'s patent-pending Mobile Experience Management platform brings all the power of customer experience management, website optimization and analytics to the world of mobile apps. We turn static native apps into powerful and dynamic marketing channels that allow you to unlock the revenue that mobile can provide, and unleash the full potential of your company\'s marketing campaigns. Artisan is founded by seasoned mobile practitioners and software innovators, and is proudly located in Old City, Philadelphia – a city known for its inventive thinking. Artisan is venture-backed by FirstMark Capital.</string>
+    <string name="action_bar_checkout">Checkout</string>
+    <string name="action_bar_search">Search</string>
+    <string name="action_bar_settings">Settings</string>
+    <string name="activity_about_title">About Us</string>
+    <string name="activity_news_detail_title">News Detail</string>
+    <string name="activity_news_title">News</string>
+    <string name="activity_request_demo_title">Request a Demo</string>
+    <string name="activity_title_store">Artisan Store</string>
+    <string name="age_and_gender_label">Age &amp; Gender</string>
+    <string name="age_picker_label">Age</string>
+    <string name="app_name">Artisan Mobile</string>
+    <string name="cart_empty">Your shopping cart is empty.</string>
+    <string name="cart_item_remove">Remove</string>
+    <string name="cart_loading">Loading your shopping cart…</string>
+    <string name="cart_total">Cart Total:</string>
+    <string name="checkout_submit">Checkout</string>
+    <string name="commit_profile_changes">Save Changes</string>
+    <string name="contact_artisan">Contact Artisan</string>
+    <string name="female">Female</string>
+    <string name="ipsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</string>
+    <string name="la">Los Angeles, CA</string>
+    <string name="la_geo">34.052658, -118.245850</string>
+    <string name="list_item_link_text_default">show link</string>
+    <string name="location_label">Location</string>
+    <string name="male">Male</string>
+    <string name="mug_name_1">Mug (White)</string>
+    <string name="mug_name_1_long">Artisan \"Just A Mug\" Coffee Mug</string>
+    <string name="mug_name_2">Mug (Black)</string>
+    <string name="mug_name_2_long">Artisan \"More Than Just A Mug\" Coffee Mug</string>
+    <string name="news_empty">No News Right Now</string>
+    <string name="newyork">New York City, NY</string>
+    <string name="newyork_geo">40.758224, -73.917404</string>
+    <string name="paris">Paris, FR</string>
+    <string name="paris_geo">48.857077, 2.350183</string>
+    <string name="philly">Philadelphia, PA</string>
+    <string name="philly_geo">39.949958, -75.145553</string>
+    <string name="profile_description">Change the user\'s settings here to see how personalization affects various demographics.</string>
+    <string name="request_demo_company_name">COMPANY NAME</string>
+    <string name="request_demo_first_name">NAME</string>
+    <string name="request_demo_heading">See what\'s possible with Artisan and get ready to start A/B testing and tracking your native mobile application.</string>
+    <string name="request_demo_subheading">Send us an email and an Artisan representative will be in touch soon. Thank you for your interest in Artisan!</string>
+    <string name="shirt_name_1">T-Shirt (Black)</string>
+    <string name="shirt_name_1_long">Artisan \"Paint it Black\" Graphic Tee</string>
+    <string name="shirt_name_2">T-Shirt (Black)</string>
+    <string name="shirt_name_2_long">Artisan \"Knights in White Satin\" Graphic Tee</string>
+    <string name="shirt_name_3">T-Shirt (Grey)</string>
+    <string name="shirt_name_3_long">Artisan \"Shades of Grey\" Graphic Tee</string>
+    <string name="shirt_name_4">T-Shirt (Red)</string>
+    <string name="shirt_name_4_long">Artisan \"99 Red Balloons\" Graphic Tee</string>
+    <string name="store_detail_add_to_cart">Add to Cart</string>
+    <string name="store_detail_checkout">Buy Now</string>
+    <string name="unknown">Unknown</string>
+    <string name="visit_website">Visit Our Website</string>
+    <string name="website_url">http://www.useartisan.com</string>
+    <!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme">
+        <!--
+             Theme customizations available in newer API levels can go in res/values-vXX/styles.xml, 
+			while customizations related to backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--
+             All customizations that are NOT specific to a particular API-level 
+			can go here.
+        -->
+    </style>
+    <style name="ArtisanTextBold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="ArtisanTextBold.Large">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="ArtisanTextBold.Small">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ArtisanTextMuted">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="ImageTile">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="ImageTile.Home">
+        <item name="android:layout_width">294dp</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+    <style name="ImageTile.Home.Square">
+        <item name="android:layout_width">140dp</item>
+    </style>
+    <style name="ImageTile.Home.Tall">
+        <item name="android:layout_height">187dp</item>
+    </style>
+    <style name="ImageTile.Store">
+        <item name="android:layout_marginTop">@dimen/page_padding_narrow</item>
+    </style>
+    <style name="ImageTile.Store.FirstColumn">
+        <item name="android:layout_marginRight">@dimen/page_padding_narrow</item>
+    </style>
+    <style name="ImageTile.Store.FirstRow">
+        <item name="android:layout_marginTop">@dimen/no_spacing</item>
+    </style>
+    <style name="ImageTile.Store.FirstRow.FirstColumn">
+        <item name="android:layout_marginRight">@dimen/page_padding_narrow</item>
+    </style>
+    <style name="ProfileLabels">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

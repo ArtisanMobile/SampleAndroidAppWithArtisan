@@ -1,0 +1,147 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:2:120
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:2:94
+	android:versionCode
+		ADDED from AndroidManifest.xml:2:70
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:3:5
+MERGED from com.android.support:support-v4:21.0.0:15:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:3:42
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:3:15
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:6:2
+	android:name
+		ADDED from AndroidManifest.xml:6:19
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:7:2
+	android:name
+		ADDED from AndroidManifest.xml:7:19
+application
+ADDED from AndroidManifest.xml:9:2
+MERGED from com.android.support:support-v4:21.0.0:16:5
+	android:label
+		ADDED from AndroidManifest.xml:9:76
+	android:allowBackup
+		ADDED from AndroidManifest.xml:9:15
+	android:icon
+		ADDED from AndroidManifest.xml:9:42
+	android:theme
+		ADDED from AndroidManifest.xml:9:148
+	android:name
+		ADDED from AndroidManifest.xml:9:109
+activity#com.artisan.android.demo.activity.HomeActivity
+ADDED from AndroidManifest.xml:10:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:10:54
+	android:name
+		ADDED from AndroidManifest.xml:10:16
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:11:10
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:12:14
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:14:14
+	android:name
+		ADDED from AndroidManifest.xml:14:24
+activity#com.artisan.android.demo.activity.StoreActivity
+ADDED from AndroidManifest.xml:17:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:17:152
+	android:label
+		ADDED from AndroidManifest.xml:17:16
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:17:100
+	android:name
+		ADDED from AndroidManifest.xml:17:61
+activity#com.artisan.android.demo.activity.StoreDetailActivity
+ADDED from AndroidManifest.xml:18:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:18:159
+	android:label
+		ADDED from AndroidManifest.xml:18:16
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:18:106
+	android:name
+		ADDED from AndroidManifest.xml:18:61
+activity#com.artisan.android.demo.activity.CheckoutActivity
+ADDED from AndroidManifest.xml:19:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:19:156
+	android:label
+		ADDED from AndroidManifest.xml:19:16
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:19:103
+	android:name
+		ADDED from AndroidManifest.xml:19:61
+activity#com.artisan.android.demo.activity.AboutActivity
+ADDED from AndroidManifest.xml:20:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:20:100
+	android:label
+		ADDED from AndroidManifest.xml:20:16
+	android:name
+		ADDED from AndroidManifest.xml:20:61
+activity#com.artisan.android.demo.activity.NewsActivity
+ADDED from AndroidManifest.xml:21:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:21:98
+	android:label
+		ADDED from AndroidManifest.xml:21:16
+	android:name
+		ADDED from AndroidManifest.xml:21:60
+activity#com.artisan.android.demo.activity.WebViewActivity
+ADDED from AndroidManifest.xml:22:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:22:108
+	android:label
+		ADDED from AndroidManifest.xml:22:16
+	android:name
+		ADDED from AndroidManifest.xml:22:67
+activity#com.artisan.android.demo.activity.RequestDemoActivity
+ADDED from AndroidManifest.xml:23:6
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:23:113
+	android:label
+		ADDED from AndroidManifest.xml:23:16
+	android:name
+		ADDED from AndroidManifest.xml:23:68
+activity#com.artisan.android.demo.activity.ProfileActivity
+ADDED from AndroidManifest.xml:24:6
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:24:138
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:24:101
+	android:label
+		ADDED from AndroidManifest.xml:24:16
+	android:name
+		ADDED from AndroidManifest.xml:24:60
+service#com.artisan.android.demo.service.LocalStorageService
+ADDED from AndroidManifest.xml:26:6
+	android:name
+		ADDED from AndroidManifest.xml:26:15
+service#com.artisan.services.ArtisanService
+ADDED from AndroidManifest.xml:27:3
+	android:name
+		ADDED from AndroidManifest.xml:27:12

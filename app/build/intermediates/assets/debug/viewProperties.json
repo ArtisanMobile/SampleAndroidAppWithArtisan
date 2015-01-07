@@ -1,0 +1,5829 @@
+{
+  "android.widget.AdapterViewAnimator" : {
+    "className" : "android.widget.AdapterViewAnimator",
+    "superclassName" : "android.widget.AdapterView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AdapterView", "android.widget.AdapterViewAnimator", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.app.MediaRouteButton" : {
+    "className" : "android.app.MediaRouteButton",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.app.MediaRouteButton" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.Switch" : {
+    "className" : "android.widget.Switch",
+    "superclassName" : "android.widget.CompoundButton",
+    "viewSubtypes" : [ "android.view.View", "android.widget.CompoundButton", "android.widget.TextView", "android.widget.Button", "android.widget.Switch" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.VideoView" : {
+    "className" : "android.widget.VideoView",
+    "superclassName" : "android.view.SurfaceView",
+    "viewSubtypes" : [ "android.view.View", "android.view.SurfaceView", "android.widget.VideoView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TableRow" : {
+    "className" : "android.widget.TableRow",
+    "superclassName" : "android.widget.LinearLayout",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.LinearLayout", "android.widget.TableRow" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.CalendarView" : {
+    "className" : "android.widget.CalendarView",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.widget.CalendarView", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.support.v4.view.ViewPager" : {
+    "className" : "android.support.v4.view.ViewPager",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.support.v4.view.ViewPager", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.support.v4.widget.SlidingPaneLayout" : {
+    "className" : "android.support.v4.widget.SlidingPaneLayout",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.support.v4.widget.SlidingPaneLayout", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AbsSeekBar" : {
+    "className" : "android.widget.AbsSeekBar",
+    "superclassName" : "android.widget.ProgressBar",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AbsSeekBar", "android.widget.ProgressBar" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ExpandableListView" : {
+    "className" : "android.widget.ExpandableListView",
+    "superclassName" : "android.widget.ListView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AbsListView", "android.view.ViewGroup", "android.widget.ExpandableListView", "android.widget.ListView", "android.widget.AdapterView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.DialerFilter" : {
+    "className" : "android.widget.DialerFilter",
+    "superclassName" : "android.widget.RelativeLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.DialerFilter", "android.view.ViewGroup", "android.widget.RelativeLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.view.View" : {
+    "className" : "android.view.View",
+    "superclassName" : "java.lang.Object",
+    "viewSubtypes" : [ "android.view.View" ],
+    "properties" : {
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      }
+    }
+  },
+  "android.widget.TimePicker" : {
+    "className" : "android.widget.TimePicker",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.widget.TimePicker" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ScrollView" : {
+    "className" : "android.widget.ScrollView",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.widget.ScrollView", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.app.FragmentBreadCrumbs" : {
+    "className" : "android.app.FragmentBreadCrumbs",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.app.FragmentBreadCrumbs", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AdapterViewFlipper" : {
+    "className" : "android.widget.AdapterViewFlipper",
+    "superclassName" : "android.widget.AdapterViewAnimator",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AdapterViewAnimator", "android.view.ViewGroup", "android.widget.AdapterView", "android.widget.AdapterViewFlipper" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.view.ViewStub" : {
+    "className" : "android.view.ViewStub",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewStub" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.support.v4.view.PagerTitleStrip" : {
+    "className" : "android.support.v4.view.PagerTitleStrip",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.support.v4.view.PagerTitleStrip" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.support.v4.widget.DrawerLayout" : {
+    "className" : "android.support.v4.widget.DrawerLayout",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.support.v4.widget.DrawerLayout", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TextSwitcher" : {
+    "className" : "android.widget.TextSwitcher",
+    "superclassName" : "android.widget.ViewSwitcher",
+    "viewSubtypes" : [ "android.widget.FrameLayout", "android.view.View", "android.widget.ViewSwitcher", "android.view.ViewGroup", "android.widget.ViewAnimator", "android.widget.TextSwitcher" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.SlidingDrawer" : {
+    "className" : "android.widget.SlidingDrawer",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.SlidingDrawer" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.DatePicker" : {
+    "className" : "android.widget.DatePicker",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.widget.DatePicker" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.RadioButton" : {
+    "className" : "android.widget.RadioButton",
+    "superclassName" : "android.widget.CompoundButton",
+    "viewSubtypes" : [ "android.view.View", "android.widget.CompoundButton", "android.widget.TextView", "android.widget.Button", "android.widget.RadioButton" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ZoomButton" : {
+    "className" : "android.widget.ZoomButton",
+    "superclassName" : "android.widget.ImageButton",
+    "viewSubtypes" : [ "android.view.View", "android.widget.ZoomButton", "android.widget.ImageButton", "android.widget.ImageView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.RadioGroup" : {
+    "className" : "android.widget.RadioGroup",
+    "superclassName" : "android.widget.LinearLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.RadioGroup", "android.view.ViewGroup", "android.widget.LinearLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ListView" : {
+    "className" : "android.widget.ListView",
+    "superclassName" : "android.widget.AbsListView",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.AbsListView", "android.widget.ListView", "android.widget.AdapterView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.Space" : {
+    "className" : "android.widget.Space",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.widget.Space" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ViewSwitcher" : {
+    "className" : "android.widget.ViewSwitcher",
+    "superclassName" : "android.widget.ViewAnimator",
+    "viewSubtypes" : [ "android.widget.FrameLayout", "android.view.View", "android.widget.ViewSwitcher", "android.view.ViewGroup", "android.widget.ViewAnimator" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ToggleButton" : {
+    "className" : "android.widget.ToggleButton",
+    "superclassName" : "android.widget.CompoundButton",
+    "viewSubtypes" : [ "android.view.View", "android.widget.CompoundButton", "android.widget.ToggleButton", "android.widget.TextView", "android.widget.Button" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TextClock" : {
+    "className" : "android.widget.TextClock",
+    "superclassName" : "android.widget.TextView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.TextClock" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.LinearLayout" : {
+    "className" : "android.widget.LinearLayout",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.LinearLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AutoCompleteTextView" : {
+    "className" : "android.widget.AutoCompleteTextView",
+    "superclassName" : "android.widget.EditText",
+    "viewSubtypes" : [ "android.view.View", "android.widget.EditText", "android.widget.TextView", "android.widget.AutoCompleteTextView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TwoLineListItem" : {
+    "className" : "android.widget.TwoLineListItem",
+    "superclassName" : "android.widget.RelativeLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TwoLineListItem", "android.view.ViewGroup", "android.widget.RelativeLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.MediaController" : {
+    "className" : "android.widget.MediaController",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.widget.MediaController" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.HorizontalScrollView" : {
+    "className" : "android.widget.HorizontalScrollView",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.widget.HorizontalScrollView", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.CheckBox" : {
+    "className" : "android.widget.CheckBox",
+    "superclassName" : "android.widget.CompoundButton",
+    "viewSubtypes" : [ "android.view.View", "android.widget.CheckBox", "android.widget.CompoundButton", "android.widget.TextView", "android.widget.Button" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.view.TextureView" : {
+    "className" : "android.view.TextureView",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.view.TextureView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.gesture.GestureOverlayView" : {
+    "className" : "android.gesture.GestureOverlayView",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.gesture.GestureOverlayView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ImageSwitcher" : {
+    "className" : "android.widget.ImageSwitcher",
+    "superclassName" : "android.widget.ViewSwitcher",
+    "viewSubtypes" : [ "android.widget.ViewSwitcher", "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.widget.ImageSwitcher", "android.widget.ViewAnimator" ],
+    "properties" : {
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.Gallery" : {
+    "className" : "android.widget.Gallery",
+    "superclassName" : "android.widget.AbsSpinner",
+    "viewSubtypes" : [ "android.view.View", "android.widget.Gallery", "android.view.ViewGroup", "android.widget.AbsSpinner", "android.widget.AdapterView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.SeekBar" : {
+    "className" : "android.widget.SeekBar",
+    "superclassName" : "android.widget.AbsSeekBar",
+    "viewSubtypes" : [ "android.view.View", "android.widget.SeekBar", "android.widget.AbsSeekBar", "android.widget.ProgressBar" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.view.SurfaceView" : {
+    "className" : "android.view.SurfaceView",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.view.SurfaceView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.view.ViewGroup" : {
+    "className" : "android.view.ViewGroup",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.MultiAutoCompleteTextView" : {
+    "className" : "android.widget.MultiAutoCompleteTextView",
+    "superclassName" : "android.widget.AutoCompleteTextView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.MultiAutoCompleteTextView", "android.widget.AutoCompleteTextView", "android.widget.EditText", "android.widget.TextView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.EditText" : {
+    "className" : "android.widget.EditText",
+    "superclassName" : "android.widget.TextView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.EditText" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.inputmethodservice.ExtractEditText" : {
+    "className" : "android.inputmethodservice.ExtractEditText",
+    "superclassName" : "android.widget.EditText",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.EditText", "android.inputmethodservice.ExtractEditText" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TabWidget" : {
+    "className" : "android.widget.TabWidget",
+    "superclassName" : "android.widget.LinearLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TabWidget", "android.view.ViewGroup", "android.widget.LinearLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.CheckedTextView" : {
+    "className" : "android.widget.CheckedTextView",
+    "superclassName" : "android.widget.TextView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.CheckedTextView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ViewAnimator" : {
+    "className" : "android.widget.ViewAnimator",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.widget.ViewAnimator" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ViewFlipper" : {
+    "className" : "android.widget.ViewFlipper",
+    "superclassName" : "android.widget.ViewAnimator",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.widget.ViewAnimator", "android.widget.ViewFlipper" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.support.v4.view.PagerTabStrip" : {
+    "className" : "android.support.v4.view.PagerTabStrip",
+    "superclassName" : "android.support.v4.view.PagerTitleStrip",
+    "viewSubtypes" : [ "android.view.View", "android.support.v4.view.PagerTitleStrip", "android.view.ViewGroup", "android.support.v4.view.PagerTabStrip" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TableLayout" : {
+    "className" : "android.widget.TableLayout",
+    "superclassName" : "android.widget.LinearLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TableLayout", "android.view.ViewGroup", "android.widget.LinearLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AbsoluteLayout" : {
+    "className" : "android.widget.AbsoluteLayout",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.AbsoluteLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.FrameLayout" : {
+    "className" : "android.widget.FrameLayout",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.CompoundButton" : {
+    "className" : "android.widget.CompoundButton",
+    "superclassName" : "android.widget.Button",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.Button", "android.widget.CompoundButton" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.support.v4.app.FragmentTabHost" : {
+    "className" : "android.support.v4.app.FragmentTabHost",
+    "superclassName" : "android.widget.TabHost",
+    "viewSubtypes" : [ "android.widget.FrameLayout", "android.view.View", "android.view.ViewGroup", "android.widget.TabHost", "android.support.v4.app.FragmentTabHost" ],
+    "properties" : {
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.GridLayout" : {
+    "className" : "android.widget.GridLayout",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.widget.GridLayout", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.appwidget.AppWidgetHostView" : {
+    "className" : "android.appwidget.AppWidgetHostView",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.widget.FrameLayout", "android.view.View", "android.appwidget.AppWidgetHostView", "android.view.ViewGroup" ],
+    "properties" : {
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ImageView" : {
+    "className" : "android.widget.ImageView",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.widget.ImageView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.DigitalClock" : {
+    "className" : "android.widget.DigitalClock",
+    "superclassName" : "android.widget.TextView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.DigitalClock" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AdapterView" : {
+    "className" : "android.widget.AdapterView",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AdapterView", "android.view.ViewGroup" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.Spinner" : {
+    "className" : "android.widget.Spinner",
+    "superclassName" : "android.widget.AbsSpinner",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.AbsSpinner", "android.widget.AdapterView", "android.widget.Spinner" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ImageButton" : {
+    "className" : "android.widget.ImageButton",
+    "superclassName" : "android.widget.ImageView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.ImageButton", "android.widget.ImageView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.NumberPicker" : {
+    "className" : "android.widget.NumberPicker",
+    "superclassName" : "android.widget.LinearLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.NumberPicker", "android.view.ViewGroup", "android.widget.LinearLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.StackView" : {
+    "className" : "android.widget.StackView",
+    "superclassName" : "android.widget.AdapterViewAnimator",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AdapterViewAnimator", "android.view.ViewGroup", "android.widget.AdapterView", "android.widget.StackView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ZoomControls" : {
+    "className" : "android.widget.ZoomControls",
+    "superclassName" : "android.widget.LinearLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.ZoomControls", "android.view.ViewGroup", "android.widget.LinearLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AbsListView" : {
+    "className" : "android.widget.AbsListView",
+    "superclassName" : "android.widget.AdapterView",
+    "viewSubtypes" : [ "android.widget.AdapterView", "android.view.View", "android.view.ViewGroup", "android.widget.AbsListView" ],
+    "properties" : {
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TextView" : {
+    "className" : "android.widget.TextView",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.webkit.WebView" : {
+    "className" : "android.webkit.WebView",
+    "superclassName" : "android.widget.AbsoluteLayout",
+    "viewSubtypes" : [ "android.view.View", "android.webkit.WebView", "android.view.ViewGroup", "android.widget.AbsoluteLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.Chronometer" : {
+    "className" : "android.widget.Chronometer",
+    "superclassName" : "android.widget.TextView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.Chronometer" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.Button" : {
+    "className" : "android.widget.Button",
+    "superclassName" : "android.widget.TextView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.TextView", "android.widget.Button" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "textSize" : {
+        "name" : "textSize",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Unit Type",
+          "type" : "int",
+          "dropDownOptions" : [ {
+            "name" : "dip",
+            "value" : "1"
+          }, {
+            "name" : "points",
+            "value" : "3"
+          }, {
+            "name" : "pixels",
+            "value" : "0"
+          }, {
+            "name" : "mm",
+            "value" : "5"
+          }, {
+            "name" : "inches",
+            "value" : "4"
+          } ]
+        }, {
+          "friendlyName" : "Size",
+          "type" : "float"
+        } ]
+      },
+      "text" : {
+        "name" : "text",
+        "group" : "default",
+        "type" : "java.lang.CharSequence",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "typeface" : {
+        "name" : "typeface",
+        "group" : "default",
+        "type" : "android.graphics.Typeface",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.Typeface"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "textColors" : {
+        "name" : "textColors",
+        "group" : "default",
+        "type" : "android.content.res.ColorStateList",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.content.res.ColorStateList"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AnalogClock" : {
+    "className" : "android.widget.AnalogClock",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AnalogClock" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.RatingBar" : {
+    "className" : "android.widget.RatingBar",
+    "superclassName" : "android.widget.AbsSeekBar",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AbsSeekBar", "android.widget.RatingBar", "android.widget.ProgressBar" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.GridView" : {
+    "className" : "android.widget.GridView",
+    "superclassName" : "android.widget.AbsListView",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.AbsListView", "android.widget.AdapterView", "android.widget.GridView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.QuickContactBadge" : {
+    "className" : "android.widget.QuickContactBadge",
+    "superclassName" : "android.widget.ImageView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.QuickContactBadge", "android.widget.ImageView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.opengl.GLSurfaceView" : {
+    "className" : "android.opengl.GLSurfaceView",
+    "superclassName" : "android.view.SurfaceView",
+    "viewSubtypes" : [ "android.view.View", "android.opengl.GLSurfaceView", "android.view.SurfaceView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.TabHost" : {
+    "className" : "android.widget.TabHost",
+    "superclassName" : "android.widget.FrameLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.FrameLayout", "android.view.ViewGroup", "android.widget.TabHost" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.ProgressBar" : {
+    "className" : "android.widget.ProgressBar",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.widget.ProgressBar" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.SearchView" : {
+    "className" : "android.widget.SearchView",
+    "superclassName" : "android.widget.LinearLayout",
+    "viewSubtypes" : [ "android.view.View", "android.widget.SearchView", "android.view.ViewGroup", "android.widget.LinearLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.inputmethodservice.KeyboardView" : {
+    "className" : "android.inputmethodservice.KeyboardView",
+    "superclassName" : "android.view.View",
+    "viewSubtypes" : [ "android.view.View", "android.inputmethodservice.KeyboardView" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.RelativeLayout" : {
+    "className" : "android.widget.RelativeLayout",
+    "superclassName" : "android.view.ViewGroup",
+    "viewSubtypes" : [ "android.view.View", "android.view.ViewGroup", "android.widget.RelativeLayout" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  },
+  "android.widget.AbsSpinner" : {
+    "className" : "android.widget.AbsSpinner",
+    "superclassName" : "android.widget.AdapterView",
+    "viewSubtypes" : [ "android.view.View", "android.widget.AdapterView", "android.view.ViewGroup", "android.widget.AbsSpinner" ],
+    "properties" : {
+      "scaleX" : {
+        "name" : "scaleX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "translationY" : {
+        "name" : "translationY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "scaleY" : {
+        "name" : "scaleY",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      },
+      "visibility" : {
+        "name" : "visibility",
+        "group" : "default",
+        "type" : "int",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "int"
+        } ]
+      },
+      "background" : {
+        "name" : "background",
+        "group" : "default",
+        "type" : "android.graphics.drawable.Drawable",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "android.graphics.drawable.Drawable"
+        } ]
+      },
+      "translationX" : {
+        "name" : "translationX",
+        "group" : "default",
+        "type" : "float",
+        "parameters" : [ {
+          "friendlyName" : "Value",
+          "type" : "float"
+        } ]
+      }
+    }
+  }
+}
