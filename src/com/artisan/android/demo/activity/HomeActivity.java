@@ -1,7 +1,6 @@
 package com.artisan.android.demo.activity;
 
 import java.util.List;
-import java.util.Set;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +9,7 @@ import android.widget.GridLayout;
 
 import com.artisan.android.demo.R;
 import com.artisan.incodeapi.ArtisanExperimentManager;
+import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.incodeapi.ExperimentDetails;
 import com.artisan.manager.ArtisanManager;
 import com.artisan.manager.ArtisanManagerCallback;
@@ -23,7 +23,6 @@ public class HomeActivity extends BaseActivity {
 		setContentView(R.layout.activity_home);
 
 		ArtisanManager.onFirstPlaylistDownloaded(this, new ArtisanManagerCallback() {
-
 			public void execute() {
 				reorderHomePageBasedOnPowerHook();
 
@@ -43,7 +42,6 @@ public class HomeActivity extends BaseActivity {
 
 					Log.d("Just Testing", "Experiment: " + experimentName + " (" + experimentID + ") variation: " + currentVariationName + " (" + currentVariationId + ")");
 				}
-				Set<String> currentVariationIds = ArtisanExperimentManager.getCurrentVariationIds();
 			}
 		});
 	}
@@ -55,21 +53,33 @@ public class HomeActivity extends BaseActivity {
 	}
 
 	public void navigateToStore(View target) {
+		// TRACKING CUSTOM ARTISAN EVENT
+		ArtisanTrackingManager.trackEvent("Navigate to store from home screen");
+
 		nextActivityIntent.setClass(this, StoreActivity.class);
 		startActivity(nextActivityIntent);
 	}
 
 	public void navigateToAbout(View target) {
+		// TRACKING CUSTOM ARTISAN EVENT
+		ArtisanTrackingManager.trackEvent("Navigate to about us from home screen");
+
 		nextActivityIntent.setClass(this, AboutActivity.class);
 		startActivity(nextActivityIntent);
 	}
 
 	public void navigateToNews(View target) {
+		// TRACKING CUSTOM ARTISAN EVENT
+		ArtisanTrackingManager.trackEvent("Navigate to news from home screen");
+
 		nextActivityIntent.setClass(this, NewsActivity.class);
 		startActivity(nextActivityIntent);
 	}
 
 	public void navigateToRequestDemo(View target) {
+		// TRACKING CUSTOM ARTISAN EVENT
+		ArtisanTrackingManager.trackEvent("Navigate to contact us from home screen");
+
 		nextActivityIntent.setClass(this, RequestDemoActivity.class);
 		startActivity(nextActivityIntent);
 	}

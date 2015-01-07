@@ -2,8 +2,10 @@ package com.artisan.android.demo.activity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -23,6 +25,7 @@ import com.artisan.android.demo.model.NewsItem;
 import com.artisan.android.demo.model.collection.NewsFeed;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
+import com.artisan.incodeapi.ArtisanTrackingManager;
 
 public class NewsActivity extends BaseActivity {
 	private static final String TAG = NewsActivity.class.getSimpleName();
@@ -121,6 +124,11 @@ public class NewsActivity extends BaseActivity {
 		}
 
 		private void showLinkClicked(String linkUrl) {
+			// CUSTOM ARTISAN ANALYTICS EVENT
+			Map<String, String> details = new HashMap<String, String>();
+			details.put("url", linkUrl);
+			ArtisanTrackingManager.trackEvent("news feed link clicked", details, "interaction", "visit website", "clicked");
+
 			Intent urlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkUrl));
 			startActivity(urlIntent);
 		}

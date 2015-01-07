@@ -14,7 +14,6 @@ import com.artisan.android.demo.R;
 
 public class WebViewActivity extends ArtisanActivity {
 
-
 	public final static String WEB_VIEW_URL = "WEB_VIEW_URL";
 
 	private WebView webView;

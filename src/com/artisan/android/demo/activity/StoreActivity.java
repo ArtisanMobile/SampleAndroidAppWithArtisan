@@ -86,6 +86,7 @@ public class StoreActivity extends BaseActivity {
 		selectedItem.setTitleLong(detailTitleLong);
 		selectedItem.setDescription(detailDescription);
 		selectedItem.setPrice(detailPrice);
+
 		if (detailTitle.contains("Mug")) {
 			selectedItem.setCategory("House");
 			selectedItem.setSubCategory("Kitchen");

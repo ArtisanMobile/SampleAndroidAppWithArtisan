@@ -2,9 +2,7 @@ package com.artisan.android.demo.activity;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Currency;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 import org.codehaus.jackson.map.ObjectMapper;
@@ -26,7 +24,6 @@ import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
 import com.artisan.incodeapi.ArtisanExperimentManager;
-import com.artisan.incodeapi.ArtisanPurchaseWorkflowManager;
 import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.incodeapi.InCodeExperimentDetails;
 import com.artisan.powerhooks.PowerHookManager;
@@ -82,7 +79,7 @@ public class StoreDetailActivity extends BaseActivity {
 			itemDescription.setText(selectedItem.getDescription());
 			itemPrice.setText(selectedItem.getPriceString());
 
-			ArtisanPurchaseWorkflowManager.productViewed(selectedItem.getId(), selectedItem.getPrice(), Currency.getInstance(Locale.US), selectedItem.getDescription(), selectedItem.getCategory(), selectedItem.getSubCategory(), selectedItem.getSubSubCategory(), null);
+			selectedItem.recordArtisanProductViewed();
 		} catch (IOException e) {
 			Log.e(TAG, "Error deserializing store item data", e);
 		}
@@ -103,6 +100,7 @@ public class StoreDetailActivity extends BaseActivity {
 
 	private void setBuyButtonResource(int newResourceId) {
 		Button buyNowButton = (Button) findViewById(R.id.activity_store_detail_checkout);
+		buyNowButton.setText(PowerHookManager.getVariableValue("store_detail_checkout"));
 		buyNowButton.setBackgroundResource(newResourceId);
 	}
 
@@ -119,6 +117,8 @@ public class StoreDetailActivity extends BaseActivity {
 	public void onResume() {
 		super.onResume();
 		storageManager.loadShoppingCart(cartListener);
+		Button buyNowButton = (Button) findViewById(R.id.activity_store_detail_checkout);
+		buyNowButton.setText(PowerHookManager.getVariableValue("store_detail_checkout"));
 
 		// If you get to this activity then you have seen the buy now experiment
 		ArtisanExperimentManager.setExperimentViewedForExperiment(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
@@ -136,10 +136,11 @@ public class StoreDetailActivity extends BaseActivity {
 			setBuyButtonResource(R.drawable.btn_long_orange);
 		}
 
-		Map<String, InCodeExperimentDetails> inCodeDetails = ArtisanExperimentManager.getInCodeExperimentDetails();
-		InCodeExperimentDetails buyNowDetails = inCodeDetails.get(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
-		if (buyNowDetails.isRunning()) {
-			Log.d(TAG, buyNowDetails.toString());
+		Map<String, InCodeExperimentDetails> allInCodeDetails = ArtisanExperimentManager.getInCodeExperimentDetails();
+		InCodeExperimentDetails buyNowExperimentDetails = allInCodeDetails.get(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
+		if (buyNowExperimentDetails != null && buyNowExperimentDetails.isRunning()) {
+			// This experiment has been started from Artisan Tools and all details are available to you.
+			// You can use these details to feed into your third party analytics tool
 		}
 	}
 
@@ -165,18 +166,13 @@ public class StoreDetailActivity extends BaseActivity {
 			Toast.makeText(this, "Could not add item to cart, please try again later.", Toast.LENGTH_LONG).show();
 		} else if (selectedItem != null) {
 			shoppingCart.addItem(selectedItem);
-			// Toast.makeText(this, "Item added to cart", Toast.LENGTH_SHORT).show();
+
 			didAddToCart = true;
 			Map<String, Object> extraData = new HashMap<String, Object>();
 			extraData.put("context", this);
 			PowerHookManager.executeBlock("showDiscountMessage", extraData);
 
-			// CUSTOM ANALYTICS EVENT
-			Map<String, String> itemDetails = new HashMap<String, String>();
-			itemDetails.put("selected item", "" + selectedItem.getTitleShort());
-			itemDetails.put("price", "" + selectedItem.getPriceString());
-			ArtisanTrackingManager.trackEvent("Item added to cart", itemDetails);
-
+			selectedItem.recordArtisanAddedToCart();
 			// update cart icon
 			updateOptionsMenu(shoppingCart.getItems().size());
 
@@ -190,11 +186,9 @@ public class StoreDetailActivity extends BaseActivity {
 		// This is the click handler for the buy now button. This is the goal of the Buy Now experiment--to get a click on the Buy Now button
 		ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
 
-		// CUSTOM ANALYTICS EVENT
-		Map<String, String> itemDetails = new HashMap<String, String>();
-		itemDetails.put("selected item", "" + selectedItem.getTitleShort());
-		itemDetails.put("price", "" + selectedItem.getPriceString());
-		ArtisanTrackingManager.trackEvent("Buy now button clicked", itemDetails);
+		ArtisanTrackingManager.trackEvent("Buy now button clicked");
+
+		selectedItem.recordArtisanAddedToCart();
 
 		boolean success = addSelectedItemToCart(v);
 		if (success) {

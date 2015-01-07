@@ -20,7 +20,6 @@ import com.artisan.application.ArtisanApplication;
 import com.artisan.incodeapi.ArtisanExperimentManager;
 import com.artisan.incodeapi.ArtisanLocationValue;
 import com.artisan.incodeapi.ArtisanProfileManager;
-import com.artisan.incodeapi.ArtisanProfileManager.Gender;
 import com.artisan.manager.ArtisanManager;
 import com.artisan.powerhooks.ArtisanBlock;
 import com.artisan.powerhooks.PowerHookManager;
@@ -148,9 +147,6 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 			}
 		});
 
-		/*
-		 * Sample push payload for demo {"ANA":{"PH":"showCartWithMessage" : "PHP" : { "message" : "Check out now and get ##discountAmount## off your purchase. We've added discount code ##discountCode## to your cart.", "discountCode" : "0000123", "discountAmount" : "30%" }} }
-		 */
 		HashMap<String, String> defaultShowCartData = new HashMap<String, String>();
 		defaultShowCartData.put("message", "Check out now and get ##discountAmount## off of your purchse. We've added discount code ##discountCode## to your cart.");
 		defaultShowCartData.put("discountCode", "012345ABC");

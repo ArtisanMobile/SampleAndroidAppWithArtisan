@@ -146,7 +146,6 @@ public class LocalStorageManager {
 	}
 
 	public class LocalStorageServiceConnection implements ServiceConnection {
-
 		public void onServiceConnected(ComponentName name, IBinder binder) {
 			LocalStorageService.ServiceBinder localBinder = (LocalStorageService.ServiceBinder) binder;
 			setService(localBinder.getService());

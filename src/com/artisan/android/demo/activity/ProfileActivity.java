@@ -1,5 +1,8 @@
 package com.artisan.android.demo.activity;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -16,6 +19,7 @@ import android.widget.Toast;
 import com.artisan.android.demo.R;
 import com.artisan.incodeapi.ArtisanLocationValue;
 import com.artisan.incodeapi.ArtisanProfileManager;
+import com.artisan.incodeapi.ArtisanTrackingManager;
 
 public class ProfileActivity extends BaseActivity {
 
@@ -145,6 +149,13 @@ public class ProfileActivity extends BaseActivity {
 		prefs.putInt("loc", loc);
 
 		prefs.commit();
+
+		// TRACKING CUSTOM ARTISAN EVENT
+		Map<String, String> details = new HashMap<String, String>();
+		details.put("age", "" + age);
+		details.put("gender", "" + gender);
+		details.put("loc", "" + loc);
+		ArtisanTrackingManager.trackEvent("Artisan user profile updated", details, "profile updates", "custom", null);
 	}
 
 	private void updateProfile() {

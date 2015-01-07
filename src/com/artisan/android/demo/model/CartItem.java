@@ -1,10 +1,13 @@
 package com.artisan.android.demo.model;
 
 import java.text.NumberFormat;
+import java.util.Currency;
 import java.util.Locale;
 
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonProperty;
+
+import com.artisan.incodeapi.ArtisanPurchaseWorkflowManager;
 
 public class CartItem {
 
@@ -119,9 +122,22 @@ public class CartItem {
 
 	public String getSubSubCategory() {
 		return subSubCategory;
+
 	}
 
 	public void setSubSubCategory(String subSubCategory) {
 		this.subSubCategory = subSubCategory;
+	}
+
+	public void recordArtisanProductViewed() {
+		ArtisanPurchaseWorkflowManager.productViewed(id, price, Currency.getInstance("USD"), description, category, subCategory, subSubCategory, null);
+	}
+
+	public void recordArtisanAddedToCart() {
+		ArtisanPurchaseWorkflowManager.addItemToCart(id, price, Currency.getInstance("USD"), description, category, subCategory, subSubCategory, 1, null);
+	}
+
+	public void recordArtisanRemovedFromCart() {
+		ArtisanPurchaseWorkflowManager.removeItemFromCart(id, price, description, 1);
 	}
 }

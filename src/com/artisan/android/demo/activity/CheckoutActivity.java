@@ -65,7 +65,7 @@ public class CheckoutActivity extends BaseActivity {
 	}
 
 	@Override
-	public void onStart() {
+	protected void onStart() {
 		super.onStart();
 
 		storageManager.loadShoppingCart(cartListener);
@@ -96,7 +96,6 @@ public class CheckoutActivity extends BaseActivity {
 			checkoutList.setEmptyView(listPlaceholder);
 
 			refreshCheckoutDisplay();
-
 		}
 
 		public void onError(LocalStorageException e) {
@@ -112,11 +111,11 @@ public class CheckoutActivity extends BaseActivity {
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-
 			if (convertView == null) {
 				LayoutInflater inflater = LayoutInflater.from(CheckoutActivity.this);
 				convertView = inflater.inflate(R.layout.list_item_checkout, parent, false);
 			}
+
 			ImageView image = (ImageView) convertView.findViewById(R.id.list_item_image);
 			TextView title = (TextView) convertView.findViewById(R.id.list_item_text);
 			TextView subtitle = (TextView) convertView.findViewById(R.id.list_item_subtext);
@@ -142,6 +141,8 @@ public class CheckoutActivity extends BaseActivity {
 				checkoutAdapter.remove(itemToRemove);
 				shoppingCart.removeItem(itemToRemove);
 				checkoutAdapter.notifyDataSetChanged();
+
+				itemToRemove.recordArtisanRemovedFromCart();
 
 				Toast.makeText(CheckoutActivity.this, "Item removed from cart.", Toast.LENGTH_SHORT).show();
 
@@ -184,16 +185,16 @@ public class CheckoutActivity extends BaseActivity {
 		shoppingCart.removeAll();
 		checkoutAdapter.clear();
 
-		// refresh detail screens
 		StoreDetailActivity.finishAll();
 
 		// API EXAMPLE: Custom Analytics Event with extra parameters
+		// Here is an example of using the Artisan Tracking Manager to track a custom analytics event with extra data
 		Map<String, String> cartInfo = new HashMap<String, String>();
 		cartInfo.put("cart total", checkoutTotal.getText().toString());
 		cartInfo.put("item count", "" + shoppingCart.getItems().size());
 		ArtisanTrackingManager.trackEvent("checked out", cartInfo);
 
-		// update a user profile variable -- this will get sent up to Artisan automatically
+		// API EXAMPLE: updating a user profile variable -- this will get sent up to Artisan automatically
 		ArtisanProfileManager.setNumberValue("totalOrderCount", ArtisanDemoApplication.totalOrderCount++);
 
 		Toast.makeText(this, PowerHookManager.getVariableValue("purchase_thanks"), Toast.LENGTH_LONG).show();
