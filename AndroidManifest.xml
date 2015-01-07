@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.artisan.android.demo">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="20"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+	<application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name=".ArtisanDemoApplication" android:theme="@style/AppTheme">
+	    <activity android:name=".activity.HomeActivity" android:screenOrientation="portrait">
+	        <intent-filter>
+	            <action android:name="android.intent.action.MAIN"/>
+
+	            <category android:name="android.intent.category.LAUNCHER"/>
+	        </intent-filter>
+	    </activity>
+	    <activity android:label="@string/activity_title_store" android:name=".activity.StoreActivity" android:parentActivityName=".activity.HomeActivity" android:screenOrientation="portrait"/>
+	    <activity android:label="@string/activity_title_store" android:name=".activity.StoreDetailActivity" android:parentActivityName=".activity.StoreActivity" android:screenOrientation="portrait"/>
+	    <activity android:label="@string/activity_title_store" android:name=".activity.CheckoutActivity" android:parentActivityName=".activity.StoreActivity" android:screenOrientation="portrait"/>
+	    <activity android:label="@string/activity_about_title" android:name=".activity.AboutActivity" android:screenOrientation="portrait"/>
+	    <activity android:label="@string/activity_news_title" android:name=".activity.NewsActivity" android:screenOrientation="portrait"/>
+	    <activity android:label="@string/activity_news_detail_title" android:name=".activity.WebViewActivity" android:screenOrientation="portrait"/>
+	    <activity android:label="@string/activity_request_demo_title" android:name=".activity.RequestDemoActivity" android:screenOrientation="portrait"/>
+	    <activity android:label="@string/action_bar_settings" android:name=".activity.ProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+	    <service android:name=".service.LocalStorageService"/>
+		<service android:name="com.artisan.services.ArtisanService"/>
+	</application>
+</manifest>
