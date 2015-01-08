@@ -14,9 +14,10 @@ gen/
 
 # Android Studio files
 .gradle
-/.idea/workspace.xml
-/.idea/libraries
-/build
+.idea/workspace.xml
+.idea/libraries
+build
+app/build
 
 # Local configuration file (sdk path, etc)
 local.properties
