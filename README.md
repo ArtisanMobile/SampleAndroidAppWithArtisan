@@ -5,15 +5,14 @@ It is intended to be used as a sandbox to see the Artisan SDK in action.
 Prerequisites
 ==============
 
-* IDE set up to build and run Android Apps. This app builds against API 20 so make sure you have that installed.
-
+* Android Studio installed and ready to run Android Apps. This app builds against API 21 so make sure you have that installed.
 
 Usage
 ==============
 
 We have already run the Artisan Installer for you, so you can just look at the code and run the app.
 
-Open this project in your favorite Android IDE. All of the required dependencies are in the libs directory.
+Open this project in Android Studio. All of the required dependencies are in the app/libs directory or handled  by gradle.
 
 In this app we have example usage of our APIs for analytics, Power Hooks, and experiments.
 
