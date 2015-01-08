@@ -1,9 +1,0 @@
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/classes/debug
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-bbf9c618664f2b879ee9f7e7e87f57d702aa3b58.jar
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.2.3-0816093ec2e43eed79ea5b28308ded27b93eb4ee.jar
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-4b904d8db546f593d74e130b5f1b847d472a8f04.jar
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-3f02c5f0c7d65595d10efb04880d2089476ad069.jar
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/jackson-core-asl-1.9.7-24f377b2da89bb6a73287379dde1080535d11301.jar
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/jackson-mapper-asl-1.9.7-6da9b6e6ab56549588b2a6c3a2f52f73981ef0c8.jar
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/classes-417c95b111df4729d02e790d0ba91fa599e46a3e.jar
-/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/build/intermediates/pre-dexed/debug/artisan_library-b66547312bb5f691f60ec1a25607438882351900.jar

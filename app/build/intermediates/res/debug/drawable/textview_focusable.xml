@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:drawable="@drawable/home_tile_artisan_pressed" android:state_selected="true"></item>
-    <item android:drawable="@drawable/home_tile_artisan_pressed" android:state_pressed="true"></item>
-    <item android:drawable="@drawable/home_tile_artisan_normal"></item>
-
-</selector>
-<!-- From: file:/Users/audrey/Developer/ArtisanAndroidDemoApp2AndroidStudio/app/src/main/res/drawable/textview_focusable.xml -->

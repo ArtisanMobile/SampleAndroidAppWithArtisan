@@ -11,7 +11,12 @@
 # generated files
 bin/
 gen/
-build/ 
+
+# Android Studio files
+.gradle
+/.idea/workspace.xml
+/.idea/libraries
+/build
 
 # Local configuration file (sdk path, etc)
 local.properties
