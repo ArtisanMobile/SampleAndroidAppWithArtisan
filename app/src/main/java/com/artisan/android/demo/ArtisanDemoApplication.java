@@ -87,7 +87,7 @@ public class ArtisanDemoApplication extends ArtisanApplication {
 		ArtisanProfileManager.registerDateTime("lastSeenAt");
 		ArtisanProfileManager.registerLocation("lastKnownLocation");
 		ArtisanProfileManager.registerNumber("totalOrderCount", ArtisanDemoApplication.totalOrderCount);
-		ArtisanProfileManager.registerNumber("ordertotal");
+		ArtisanProfileManager.registerNumber("orderTotal");
 		ArtisanProfileManager.registerString("visitorType", "anonymous");
 
 		// These are just examples of using the . We don't have real profile information for this app
