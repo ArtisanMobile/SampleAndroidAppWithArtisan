@@ -124,10 +124,10 @@ public class NewsActivity extends BaseActivity {
 		}
 
 		private void showLinkClicked(String linkUrl) {
-			// CUSTOM ARTISAN ANALYTICS EVENT
+			// CUSTOM ARTISAN ANALYTICS EVENT with categories
 			Map<String, String> details = new HashMap<String, String>();
 			details.put("url", linkUrl);
-			ArtisanTrackingManager.trackEvent("news feed link clicked", details, "interaction", "visit website", "clicked");
+			ArtisanTrackingManager.trackEvent("News feed link clicked", details, "interaction", "visit website", "clicked");
 
 			Intent urlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkUrl));
 			startActivity(urlIntent);

@@ -24,7 +24,6 @@ import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
 import com.artisan.incodeapi.ArtisanExperimentManager;
-import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.incodeapi.InCodeExperimentDetails;
 import com.artisan.powerhooks.PowerHookManager;
 
@@ -185,8 +184,6 @@ public class StoreDetailActivity extends BaseActivity {
 	public void addSelectedItemToCartAndCheckout(View v) {
 		// This is the click handler for the buy now button. This is the goal of the Buy Now experiment--to get a click on the Buy Now button
 		ArtisanExperimentManager.setTargetReachedForExperiment(ArtisanDemoApplication.BUY_NOW_EXPERIMENT);
-
-		ArtisanTrackingManager.trackEvent("Buy now button clicked");
 
 		selectedItem.recordArtisanAddedToCart();
 

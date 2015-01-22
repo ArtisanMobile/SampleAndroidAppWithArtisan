@@ -9,7 +9,6 @@ import android.widget.GridLayout;
 
 import com.artisan.android.demo.R;
 import com.artisan.incodeapi.ArtisanExperimentManager;
-import com.artisan.incodeapi.ArtisanTrackingManager;
 import com.artisan.incodeapi.ExperimentDetails;
 import com.artisan.manager.ArtisanManager;
 import com.artisan.manager.ArtisanManagerCallback;
@@ -53,33 +52,21 @@ public class HomeActivity extends BaseActivity {
 	}
 
 	public void navigateToStore(View target) {
-		// TRACKING CUSTOM ARTISAN EVENT
-		ArtisanTrackingManager.trackEvent("Navigate to store from home screen");
-
 		nextActivityIntent.setClass(this, StoreActivity.class);
 		startActivity(nextActivityIntent);
 	}
 
 	public void navigateToAbout(View target) {
-		// TRACKING CUSTOM ARTISAN EVENT
-		ArtisanTrackingManager.trackEvent("Navigate to about us from home screen");
-
 		nextActivityIntent.setClass(this, AboutActivity.class);
 		startActivity(nextActivityIntent);
 	}
 
 	public void navigateToNews(View target) {
-		// TRACKING CUSTOM ARTISAN EVENT
-		ArtisanTrackingManager.trackEvent("Navigate to news from home screen");
-
 		nextActivityIntent.setClass(this, NewsActivity.class);
 		startActivity(nextActivityIntent);
 	}
 
 	public void navigateToRequestDemo(View target) {
-		// TRACKING CUSTOM ARTISAN EVENT
-		ArtisanTrackingManager.trackEvent("Navigate to contact us from home screen");
-
 		nextActivityIntent.setClass(this, RequestDemoActivity.class);
 		startActivity(nextActivityIntent);
 	}
