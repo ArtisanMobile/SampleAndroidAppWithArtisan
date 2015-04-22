@@ -5,7 +5,7 @@ It is intended to be used as a sandbox to see the Artisan SDK in action.
 Prerequisites
 ==============
 
-* Android Studio installed and ready to run Android Apps. This app builds against API 21 so make sure you have that installed.
+* Android Studio installed and ready to run Android Apps. This app builds against API 22 so make sure you have that installed.
 
 Usage
 ==============
@@ -34,9 +34,6 @@ There you can also see that we are using setExperimentViewedForExperiment onResu
 * If you look at StoreDetailActivity you can see where we are using addSelectedItemToCartAndCheckout to log that the user has reached the goal for this experiment.
 * You can run this app without connecting to ArtisanTools. If you'd like to see how isCurrentVariant works you can pretend to activate different variations using startExperiment in ArtisanDemoApplication
 * You will have to connect your app to Artisan to officially start an experiment and gather statistics about which variation is the most successful.
-
-ARTISAN CANVAS EXPERIMENTS
-* You will need to connect your device to try out the Artisan Canvas. This is where you can create AB tests and publish changes to your app without having to touch the code at all.
 
 ARTISAN PUSH MESSAGE CAMPAIGNS
 * This app is not configured by default to use Artisan Push. If you would like to try Artisan Push with this app you can re-run the installer and answer "y" when it asks about Artisan Push. You will need to add the Google Play Services Library as a dependency and add your GCM Sender ID to ArtisanDemoApplication.onCreate (see the instructions there). You will also need to set up a corresponding app in Artisan Tools and add your GCM Server Key there.
