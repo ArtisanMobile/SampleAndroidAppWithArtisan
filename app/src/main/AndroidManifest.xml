@@ -3,7 +3,6 @@
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="20"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 	<application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name=".ArtisanDemoApplication" android:theme="@style/AppTheme">
@@ -24,6 +23,8 @@
 	    <activity android:label="@string/action_bar_settings" android:name=".activity.ProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"/>
 
 	    <service android:name=".service.LocalStorageService"/>
-		<service android:name="com.artisan.services.ArtisanService"/>
+
+        <service android:name="com.artisan.services.ArtisanService"/>
+
 	</application>
 </manifest>
