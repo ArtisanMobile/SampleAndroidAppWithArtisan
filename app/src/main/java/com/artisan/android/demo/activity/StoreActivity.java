@@ -6,6 +6,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.GridLayout;
@@ -18,6 +19,7 @@ import com.artisan.android.demo.model.collection.ShoppingCart;
 import com.artisan.android.demo.service.LocalStorageListener;
 import com.artisan.android.demo.service.LocalStorageManager.LocalStorageException;
 import com.artisan.incodeapi.ArtisanExperimentManager;
+import com.artisan.incodeapi.ArtisanProfileManager;
 
 public class StoreActivity extends BaseActivity {
 
@@ -45,6 +47,15 @@ public class StoreActivity extends BaseActivity {
 	public void onStart() {
 		super.onStart();
 		storageManager.loadShoppingCart(cartListener);
+
+		// EXAMPLE: API to access the Artisan Id and GCM push token for this device. For more information see http://docs.useartisan.com/dev/android/user-profiles/#artisan-id
+		String artisanID = ArtisanProfileManager.getArtisanId();
+		String pushToken = ArtisanProfileManager.getPushToken(); // this will be an empty string unless you set up Artisan Push
+		Log.d("Artisan Example", "The Artisan ID for this device is " + artisanID);
+		if (!TextUtils.isEmpty(pushToken)) {
+			Log.d("Artisan Example", "The GCM push token for this device is " + pushToken);
+		}
+		// from here you could push these values to a 3rd party analytics or push service.
 	}
 
 	@Override
